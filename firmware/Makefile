@@ -55,6 +55,8 @@ fw-shipped-$(CONFIG_TIGON3) += tigon/tg3.bin tigon/tg3_tso.bin \
 			       tigon/tg3_tso5.bin
 fw-shipped-$(CONFIG_TYPHOON) += 3com/typhoon.bin
 
+fw-shipped-$(CONFIG_BT_ATH3K) += ath3k-1.fw
+
 fw-shipped-all := $(fw-shipped-y) $(fw-shipped-m) $(fw-shipped-)
 
 # Directories which we _might_ need to create, so we have a rule for them.
