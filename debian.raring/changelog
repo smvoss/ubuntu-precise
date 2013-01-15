@@ -1,3 +1,10 @@
+linux-lts-raring (3.8.0-0.3~precise2) precise; urgency=low
+
+  * Fix i386 tools FTBS
+    Add include path for turbostat
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 15 Jan 2013 09:44:01 -0700
+
 linux-lts-raring (3.8.0-0.3~precise1) precise; urgency=low
 
   [ Andy Whitcroft ]
