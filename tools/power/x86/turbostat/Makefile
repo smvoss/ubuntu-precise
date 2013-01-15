@@ -6,6 +6,7 @@ DESTDIR		:=
 turbostat : turbostat.c
 CFLAGS +=	-Wall
 CFLAGS +=	-DMSRHEADER='"../../../../arch/x86/include/uapi/asm/msr-index.h"'
+CFLAGS +=	-I../../../../tools/perf/util/include
 
 %: %.c
 	@mkdir -p $(BUILD_OUTPUT)
