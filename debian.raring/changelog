@@ -1,3 +1,10 @@
+linux-lts-raring (3.8.0-0.3~precise3) precise; urgency=low
+
+  * Set do_tools_perf=true
+  * Add openssl as a build-dep
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Tue, 15 Jan 2013 13:09:20 -0700
+
 linux-lts-raring (3.8.0-0.3~precise2) precise; urgency=low
 
   * Fix i386 tools FTBS
