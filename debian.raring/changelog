@@ -1,18 +1,170 @@
-linux-lts-raring (3.8.0-0.3~precise3) precise; urgency=low
+linux-lts-raring (3.8.0-4.8~precise1) precise; urgency=low
 
-  * Set do_tools_perf=true
-  * Add openssl as a build-dep
+  [ Allen Ibara ]
 
- --  Tim Gardner <tim.gardner@canonical.com>  Tue, 15 Jan 2013 13:09:20 -0700
+  * SAUCE: imx6: dts: Add IMX6Q AHCI support
 
-linux-lts-raring (3.8.0-0.3~precise2) precise; urgency=low
+  [ Andy Whitcroft ]
 
-  * Fix i386 tools FTBS
-    Add include path for turbostat
+  * rebase to v3.8-rc6
+  * updateconfigs following rebase to v3.8-rc6
 
- -- Tim Gardner <tim.gardner@canonical.com>  Tue, 15 Jan 2013 09:44:01 -0700
+  [Leann Ogasawara]
 
-linux-lts-raring (3.8.0-0.3~precise1) precise; urgency=low
+  * Release Tracking Bug
+    - LP: #1112573
+
+  [ Paolo Pisati ]
+
+  * SAUCE: imx6: enable sata clk if SATA_AHCI_PLATFORM
+  * [Config] SERIAL_AMBA_PL011=y (vexpress serial console)
+  * [Config] MMC_ARMMMCI=y (vexpress mmc)
+  * [Config] FB_ARMCLCD=y (vexpress framebuffer)
+
+  [ Seth Forshee ]
+
+  * [Config] CONFIG_MAC80211_MESSAGE_TRACING=y
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.8-rc6
+    - LP: #1107477
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Fri, 01 Feb 2013 07:20:59 -0800
+
+linux (3.8.0-3.7) raring; urgency=low
+
+  [ Andy Green ]
+
+  * SAUCE: ARM: OMAP2+: add cpu id register to MAC address helper
+  * SAUCE: ARM: omap2 add mac address allocation register api
+  * SAUCE: ARM: omap2 panda register ethernet and wlan for automatic mac
+    allocation
+
+  [ Leann Ogasawara ]
+
+  * rebase to v3.8-rc5
+  * Release Tracking Bug
+    - LP: #1111486
+
+  [ Paolo Pisati ]
+
+  * SAUCE: davinci: vpss: compilation fix
+  * [Config] enable TI OMAP4 support (Pandaboard/ES)
+  * [Config] OMAP_USB2=y (since TWL6030_USB depends on it)
+  * [Config] enable Freescale IMX6 support (SabreLite)
+  * [Config] SERIAL_IMX_CONSOLE=y
+  * [Config] MMC_*_IMX=y
+  * [Config] disable USB_SUSPEND
+  * [Config] USB_MXS_PHY=y
+  * [Config] USB_CHIPIDEA=y
+  * SAUCE: DTB: add support for multiple DTBs
+  * SAUCE: DTB: build imx6q-sabrelite
+  * SAUCE: DTB: build beaglexm
+  * SAUCE: DTB: build panda/panda es
+  * [Config] disable CPU_FREQ
+  * [Config] PANEL_TFP410=y (video DVI output)
+  * [Config] SND_OMAP_SOC*=y
+  * [Config] SND_IMX_SOC*=y
+  * [Config] I2C_IMX=y
+  * [Config] SPI_IMX=m
+
+  [ Stefan Bader ]
+
+  * [Config] Move 9p modules into generic package
+    - LP: #1107658
+
+  [ Tony Lindgren ]
+
+  * SAUCE: ARM: OMAP2+: Limit omap initcalls to omap only on multiplatform
+    kernels
+  * SAUCE: ARM: OMAP2+: Use omap initcalls
+  * SAUCE: ARM: OMAP: Fix i2c cmdline initcall for multiplatform
+  * SAUCE: ARM: OMAP: Fix dmaengine init for multiplatform
+  * SAUCE: ARM: OMAP2+: Add multiplatform debug_ll support
+  * SAUCE: ARM: OMAP2+: Disable code that currently does not work with
+    multiplaform
+  * SAUCE: ARM: OMAP2+: Enable ARCH_MULTIPLATFORM support
+  * SAUCE: ARM: OMAP2+: Add minimal support for booting vexpress
+  * SAUCE: ARM: OMAP2+: Remove now obsolete uncompress.h and debug-macro.S
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.8-rc5
+    - LP: #1096789
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Thu, 31 Jan 2013 06:44:52 -0800
+
+linux (3.8.0-2.6) raring; urgency=low
+
+  [ Adam Conrad ]
+
+  * Fix up linux-tools -> SRCPKGNAME-tools rename
+
+  [ Andy Whitcroft ]
+
+  * [Config] re-disable CONFIG_SOUND_OSS
+    - LP: #1105230
+
+  [ Arend van Spriel ]
+
+  * SAUCE: brcmsmac: fix tx status processing
+
+  [Leann Ogasawara]
+
+  * Release Tracking Bug
+    - LP: #1105104
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Fri, 25 Jan 2013 11:56:30 -0800
+
+linux (3.8.0-1.5) raring; urgency=low
+
+  [Tim Gardner]
+
+  * Release Tracking Bug
+    - LP: #1101235
+
+  [ Dudley Du ]
+
+  * SAUCE: Input: add support for Cypress PS/2 Trackpads
+    - LP: #978807
+
+  [ Kamal Mostafa ]
+
+  * SAUCE: Input: increase struct ps2dev cmdbuf[] to 8 bytes
+  * SAUCE: Input: Cypress PS/2 Trackpad simulated multitouch
+  * [Config] Add CONFIG_PS2_CYPRESS
+
+  [ Tim Gardner ]
+
+  * rebase to v3.8-rc4
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.8-rc4
+    - LP: #1095315
+    - LP: #886975
+    - LP: #1086921
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Thu, 17 Jan 2013 10:50:22 -0800
+
+linux (3.8.0-0.4) raring; urgency=low
+
+  [ Leann Ogasawara ]
+
+  * [Config] Update CONFIG_TOUCHSCREEN_EGALAX build annotation
+  * [Config] Update CONFIG_IIO build annotation
+  * [Config] Update CONFIG_TOUCHSCREEN_EETI annotation
+  * [Config] Remove CONFIG_SPI_DW_MMIO annotation
+  * [Config] Remove CONFIG_SPI_PL022 annotation
+  * [Config] Update CONFIG_EZX_PCAP annotation
+  * [Config] Update CONFIG_SENSORS_AK8975 annotation
+  * [Config] Disable CONFIG_DRM_MGAG200
+    - LP: #1042903
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Mon, 14 Jan 2013 10:01:50 -0800
+
+linux (3.8.0-0.3) raring; urgency=low
 
   [ Andy Whitcroft ]
 
