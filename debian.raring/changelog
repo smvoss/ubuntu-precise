@@ -1,4 +1,38 @@
-linux-lts-raring (3.8.0-4.8~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-4.9~precise1) precise; urgency=low
+
+  [ Herton Ronaldo Krzesinski ]
+
+  * d-i: Add mellanox ethernet drivers to nic-modules
+    - LP: #1015339
+
+  [ Joseph Salisbury ]
+
+  * SAUCE: ACPI: Add DMI entry for Sony VGN-FW41E_H
+    - LP: #1113547
+
+  [ Kamal Mostafa ]
+
+  * SAUCE: alx driver import script
+
+  [ Qualcomm Atheros, Inc ]
+
+  * SAUCE: alx: Update to heads/master
+
+  [ Tim Gardner ]
+
+  * Release Tracking Bug
+    - LP: #1117673
+
+  * [debian] Remove dangling symlink from headers package
+    - LP: #1112442
+  * [config] CONFIG_ALX=m
+  * [Config] Add alx to d-i nic-modules
+  * [Config] CONFIG_SATA_AHCI=m
+    - LP: #1056563
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Tue, 05 Feb 2013 05:54:32 -0800
+
+linux (3.8.0-4.8) raring; urgency=low
 
   [ Allen Ibara ]
 
