@@ -1,4 +1,25 @@
-linux-lts-raring (3.8.0-4.9~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-5.10~precise1) precise; urgency=low
+
+  [Tim Gardner]
+
+  * Release Tracking Bug
+    - LP: #1118568
+
+  * Bump ABI to fix install issue with 3.8.0-4.8.
+    Moving drivers/ata/*ahci* to linux-image caused an
+    install conflict with linux-image-extras without an
+    ABI bump.
+
+  [ Jan Beulich ]
+
+  * SAUCE: xen-pciback: rate limit error messages from
+    xen_pcibk_enable_msi{, x}()
+    - LP: #1117336
+    - CVE-2013-0231
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Thu, 07 Feb 2013 05:38:12 -0700
+
+linux (3.8.0-4.9) raring; urgency=low
 
   [ Herton Ronaldo Krzesinski ]
 
