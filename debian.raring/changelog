@@ -1,4 +1,20 @@
-linux-lts-raring (3.8.0-5.10~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-6.11~precise1) precise; urgency=low
+
+  [Tim Gardner]
+
+  * Release Tracking Bug
+    - LP: #1122071
+  * rebase to v3.8-rc7
+  * Add libaudit-dev as a build dependency
+  * Build perf with NO_LIBPYTHON=1 to avoid a python build dependency.
+
+  [ Leann Ogasawara ]
+
+  * [Config] Remove CONFIG_SATA_AHCI annotation
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 08 Feb 2013 07:41:13 -0500
+
+linux (3.8.0-5.10) raring; urgency=low
 
   [Tim Gardner]
 
