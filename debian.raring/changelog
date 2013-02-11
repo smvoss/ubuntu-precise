@@ -1,3 +1,9 @@
+linux-lts-raring (3.8.0-6.11~precise2) precise; urgency=low
+
+  * Fix linux-headers dependency.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 11 Feb 2013 13:11:48 -0700
+
 linux-lts-raring (3.8.0-6.11~precise1) precise; urgency=low
 
   [Tim Gardner]
