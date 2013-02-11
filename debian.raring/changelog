@@ -1,4 +1,100 @@
-linux-lts-raring (3.8.0-6.11~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-7.16~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] all new menu aligned annotations
+  * [Config] v3.8 configuration review -- pass 1
+  * [Config] v3.8 configuration review -- pass 2
+  * [Config] apply v3.8 final configuration review changes
+  * [Config] annotation: ALX does not build on powerpc
+  * [Config] CONFIG_DEBUG_INFO=y
+
+  [ Mathias Krause ]
+
+  * SAUCE: sock_diag: Fix out-of-bounds access to sock_diag_handlers[]
+    - LP: #1132896
+    - CVE-2013-1763
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Sun, 24 Feb 2013 06:38:59 -0700
+
+linux (3.8.0-7.15) raring; urgency=low
+
+  [ Kamal Mostafa ]
+
+  * [Config] Add CONFIG_PS2_CYPRESS
+  * SAUCE: Input: Cypress PS/2 Trackpad simulated multitouch
+  * SAUCE: Input: fix Cypress PS/2 Trackpad in Dell XPS12
+    - LP: #1103594
+
+  [ Upstream Kernel Changes ]
+
+  * Input: increase struct ps2dev cmdbuf[] to 8 bytes
+  * Input: add support for Cypress PS/2 Trackpads
+    - LP: #978807
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Thu, 21 Feb 2013 11:59:19 -0700
+
+linux (3.8.0-7.14) raring; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] CONFIG_RCU_USER_QS=n
+  * [Config] CONFIG_MTD_ONENAND_SIM=n
+  * annotations: add annotations for CONFIG_CC_STACKPROTECTOR
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.8
+
+  [Tim Gardner]
+
+  * Release Tracking Bug
+    - LP: #1130111
+  * UBUNTU: SAUCE: rt2x00: rt2x00pci_regbusy_read() - only print register access failure once
+    - LP: #1128840
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Mon, 18 Feb 2013 09:25:56 -0700
+
+linux (3.8.0-6.13) raring; urgency=low
+
+  [Tim Gardner]
+
+  * Release Tracking Bug
+    - LP: #1125364
+  * Add ahci modules to d-i
+    - LP: #1124415
+
+
+  [ Chris Wilson ]
+
+  * SAUCE: drm/i915: Wait for pending flips to complete before tearing down
+    the encoders
+    - LP: #1097315
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Wed, 13 Feb 2013 12:16:48 -0700
+
+linux (3.8.0-6.12) raring; urgency=low
+
+  [Tim Gardner]
+
+  * perf: NO_LIBPERL=1
+  * Fix linux-headers dependency
+  * Release Tracking Bug
+    - LP: #1124362
+
+  [ Andy Whitcroft ]
+
+  * [Config] enable CONFIG_AUFS_EXPORT to allow nfs exports
+    - LP: #1121699
+
+  [ Daniel Vetter ]
+
+  * SAUCE: drm/i915: write backlight harder
+    - LP: #954661
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Wed, 13 Feb 2013 10:25:11 -0700
+
+linux (3.8.0-6.11) raring; urgency=low
 
   [Tim Gardner]
 
