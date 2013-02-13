@@ -1,10 +1,25 @@
-linux-lts-raring (3.8.0-6.11~precise2) precise; urgency=low
+linux-lts-raring (3.8.0-6.12~precise1) precise; urgency=low
 
-  * Fix linux-headers dependency.
+  [Tim Gardner]
 
- -- Tim Gardner <tim.gardner@canonical.com>  Mon, 11 Feb 2013 13:11:48 -0700
+  * perf: NO_LIBPERL=1
+  * Fix linux-headers dependency
+  * Release Tracking Bug
+    - LP: #1124362
 
-linux-lts-raring (3.8.0-6.11~precise1) precise; urgency=low
+  [ Andy Whitcroft ]
+
+  * [Config] enable CONFIG_AUFS_EXPORT to allow nfs exports
+    - LP: #1121699
+
+  [ Daniel Vetter ]
+
+  * SAUCE: drm/i915: write backlight harder
+    - LP: #954661
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Wed, 13 Feb 2013 10:25:11 -0700
+
+linux (3.8.0-6.11) raring; urgency=low
 
   [Tim Gardner]
 
