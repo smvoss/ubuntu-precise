@@ -1,4 +1,22 @@
-linux-lts-raring (3.8.0-6.12~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-6.13~precise1) precise; urgency=low
+
+  [Tim Gardner]
+
+  * Release Tracking Bug
+    - LP: #1125364
+  * Add ahci modules to d-i
+    - LP: #1124415
+
+
+  [ Chris Wilson ]
+
+  * SAUCE: drm/i915: Wait for pending flips to complete before tearing down
+    the encoders
+    - LP: #1097315
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Wed, 13 Feb 2013 12:16:48 -0700
+
+linux (3.8.0-6.12) raring; urgency=low
 
   [Tim Gardner]
 
