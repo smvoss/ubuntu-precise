@@ -1,4 +1,25 @@
-linux-lts-raring (3.8.0-6.13~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-7.14~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] CONFIG_RCU_USER_QS=n
+  * [Config] CONFIG_MTD_ONENAND_SIM=n
+  * annotations: add annotations for CONFIG_CC_STACKPROTECTOR
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.8
+
+  [Tim Gardner]
+
+  * Release Tracking Bug
+    - LP: #1130111
+  * UBUNTU: SAUCE: rt2x00: rt2x00pci_regbusy_read() - only print register access failure once
+    - LP: #1128840
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Mon, 18 Feb 2013 09:25:56 -0700
+
+linux (3.8.0-6.13) raring; urgency=low
 
   [Tim Gardner]
 
