@@ -1,16 +1,38 @@
-linux-lts-quantal (3.5.0-24.37~precise1) precise-proposed; urgency=low
+linux-lts-quantal (3.5.0-25.38~precise1) precise-proposed; urgency=low
 
   [Luis Henriques]
 
   * Release Tracking Bug
-    - LP: #1118287
+    - LP: #1130317
+
+  [ Upstream Kernel Changes ]
+
+  * ptrace: introduce signal_wake_up_state() and ptrace_signal_wake_up()
+    - LP: #1119885, #1129192
+    - CVE-2013-0871
+  * ptrace: ensure arch_ptrace/ptrace_request can never race with SIGKILL
+    - LP: #1119885, #1129192
+    - CVE-2013-0871
+  * wake_up_process() should be never used to wakeup a TASK_STOPPED/TRACED
+    task
+    - LP: #1119885, #1129192
+    - CVE-2013-0871
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Tue, 19 Feb 2013 20:07:20 +0000
+
+linux (3.5.0-24.37) quantal-proposed; urgency=low
+
+  [Luis Henriques]
+
+  * Release Tracking Bug
+    - LP: #1117492
 
   [ Tim Gardner ]
 
   * [Config] CONFIG_ALX=m for x86 only
     - LP: #927782
 
- -- Luis Henriques <luis.henriques@canonical.com>  Thu, 07 Feb 2013 12:08:38 +0000
+ -- Luis Henriques <luis.henriques@canonical.com>  Wed, 06 Feb 2013 17:29:44 +0000
 
 linux (3.5.0-24.36) quantal-proposed; urgency=low
 
