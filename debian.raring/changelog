@@ -1,4 +1,23 @@
-linux-lts-raring (3.8.0-7.15~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-7.16~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] all new menu aligned annotations
+  * [Config] v3.8 configuration review -- pass 1
+  * [Config] v3.8 configuration review -- pass 2
+  * [Config] apply v3.8 final configuration review changes
+  * [Config] annotation: ALX does not build on powerpc
+  * [Config] CONFIG_DEBUG_INFO=y
+
+  [ Mathias Krause ]
+
+  * SAUCE: sock_diag: Fix out-of-bounds access to sock_diag_handlers[]
+    - LP: #1132896
+    - CVE-2013-1763
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Sun, 24 Feb 2013 06:38:59 -0700
+
+linux (3.8.0-7.15) raring; urgency=low
 
   [ Kamal Mostafa ]
 
