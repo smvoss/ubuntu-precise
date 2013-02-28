@@ -1,4 +1,50 @@
-linux-lts-raring (3.8.0-7.16~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-9.18~precise1) precise; urgency=low
+
+  [Tim Gardner]
+
+  * Release Tracking Bug
+    - LP: #1135937
+  * [Config] CONFIG_PATA_ACPI=m
+    - LP: #1084783
+  * UBUNTU: [debian] Fix indep_hdrs_pkg_name
+    - LP: #1134441
+
+  [ Upstream Kernel Changes ]
+
+  * intel_idle: stop using driver_data for static flags
+    - LP: #1083993
+  * intel_idle: support Haswell
+    - LP: #1083993
+  * i2c: i801: SMBus patch for Intel Avoton DeviceIDs
+    - LP: #1083965
+  * ahci: AHCI-mode SATA patch for Intel Avoton DeviceIDs
+    - LP: #1083965
+  * ata_piix: IDE-mode SATA patch for Intel Avoton DeviceIDs
+    - LP: #1083965
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.8.1
+    - LP: #1011792
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Wed, 27 Feb 2013 06:10:52 -0700
+
+linux (3.8.0-8.17) raring; urgency=low
+
+  [Tim Gardner]
+
+  * Release Tracking Bug
+    - LP: #1133552
+  * Bump ABI to fix armhf FTBS
+
+  [ Herton Ronaldo Krzesinski ]
+
+  * d-i: Add hid-logitech-dj to input-modules
+    - LP: #975198
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Tue, 26 Feb 2013 12:12:21 -0700
+
+linux (3.8.0-7.16) raring; urgency=low
 
   [ Andy Whitcroft ]
 
