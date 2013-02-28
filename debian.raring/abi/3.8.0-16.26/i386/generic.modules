@@ -18,6 +18,7 @@
 8139too
 8250_accent
 8250_boca
+8250_dw
 8250_exar_st16c554
 8250_fourport
 8250_hub6
@@ -1092,6 +1093,7 @@ gpio-sch
 gpio_tilt_polled
 gpio-tps65912
 gpio-ts5500
+gpio-twl4030
 gpio-twl6040
 gpio_vbus
 gpio-viperboard
@@ -1325,6 +1327,7 @@ i2c-hid
 i2c-i801
 i2c-intel-mid
 i2c-isch
+i2c-ismt
 i2c-matroxfb
 i2c-mux
 i2c-mux-gpio
@@ -2245,6 +2248,7 @@ padlock-aes
 padlock-sha
 palmas-regulator
 panasonic-laptop
+pandora_bl
 panel
 paride
 parkbd
@@ -2254,6 +2258,7 @@ parport_cs
 parport_pc
 parport_serial
 pas16
+pata_acpi
 pata_ali
 pata_amd
 pata_arasan_cf
@@ -2429,6 +2434,8 @@ pvrusb2
 pwc
 pwm-beeper
 pwm_bl
+pwm-twl
+pwm-twl-led
 qcaux
 qcserial
 qinfo_probe
@@ -2706,6 +2713,7 @@ rtc-s35390a
 rtc-stk17ta8
 rtc-tps6586x
 rtc-tps65910
+rtc-twl
 rtc-v3020
 rtc-wm831x
 rtc-wm8350
@@ -2733,6 +2741,7 @@ rts5139
 rtsx_pci
 rtsx_pci_ms
 rtsx_pci_sdmmc
+rx51_battery
 rxkad
 s1d13xxxfb
 s2250
@@ -2769,7 +2778,6 @@ salsa20_generic
 salsa20-i586
 samsung-laptop
 samsung-q10
-sata_highbank
 sata_inic162x
 sata_mv
 sata_nv
@@ -3147,6 +3155,7 @@ snd-soc-tlv320aic32x4
 snd-soc-tlv320aic3x
 snd-soc-tlv320dac33
 snd-soc-tpa6130a2
+snd-soc-twl4030
 snd-soc-twl6040
 snd-soc-uda134x
 snd-soc-uda1380
@@ -3270,7 +3279,8 @@ spi-gpio
 spi_ks8995
 spi-lm70llp
 spi-oc-tiny
-spi-pxa2xx
+spi-pxa2xx-pci
+spi-pxa2xx-platform
 spi-sc18is602
 spi-tle62x0
 spi-topcliff-pch
@@ -3500,6 +3510,13 @@ tveeprom
 tvp5150
 tw9910
 twidjoy
+twl4030_charger
+twl4030_keypad
+twl4030-madc
+twl4030-madc-hwmon
+twl4030-pwrbutton
+twl4030-vibra
+twl4030_wdt
 twl6040-vibra
 twofish_common
 twofish_generic
