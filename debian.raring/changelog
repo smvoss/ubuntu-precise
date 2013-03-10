@@ -1,4 +1,25 @@
-linux-lts-raring (3.8.0-11.20~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-12.21~precise1) precise; urgency=low
+
+  [ Tim Gardner ]
+
+  * [Config] CONFIG_PSTORE=n for x86
+  * Release Tracking Bug
+    - LP: #1152228
+
+  [ Upstream Kernel Changes ]
+
+  * Revert "efivarfs: guid part of filenames are case-insensitive"
+    - LP: #1146988
+  * Revert "efivarfs: Validate filenames much more aggressively"
+    - LP: #1146988
+  * mfd: rtsx: Optimize card detect flow
+    - LP: #1148892
+  * mfd: rtsx: Fix issue that booting OS with SD card inserted
+    - LP: #1148892
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Wed, 06 Mar 2013 06:40:22 -0700
+
+linux (3.8.0-11.20) raring; urgency=low
 
   [ Tim Gardner ]
 
