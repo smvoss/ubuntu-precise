@@ -1,9 +1,23 @@
-linux-lts-quantal (3.5.0-26.40~precise1) precise-proposed; urgency=low
+linux-lts-quantal (3.5.0-26.42~precise1) precise-proposed; urgency=low
+
+  [Steve Conklin]
+
+  * Release Tracking Bug
+    - LP: #1153655
+
+  [ Andy Whitcroft ]
+
+  * ubuntu: overlayfs -- fix missmerge of vfs_open changes
+    - LP: #1122094, #1147678
+
+ -- Brad Figg <brad.figg@canonical.com>  Mon, 11 Mar 2013 14:37:06 -0700
+
+linux (3.5.0-26.40) quantal-proposed; urgency=low
 
   [Brad Figg]
 
   * Release Tracking Bug
-    - LP: #1135219
+    - LP: #1133429
 
   [ Andy Whitcroft ]
 
@@ -394,7 +408,7 @@ linux-lts-quantal (3.5.0-26.40~precise1) precise-proposed; urgency=low
   * Linux 3.5.7.6
     - LP: #1131944
 
- -- Brad Figg <brad.figg@canonical.com>  Wed, 27 Feb 2013 10:17:56 -0800
+ -- Brad Figg <brad.figg@canonical.com>  Tue, 26 Feb 2013 08:44:21 -0800
 
 linux (3.5.0-25.39) quantal-proposed; urgency=low
 
