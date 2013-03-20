@@ -1,4 +1,4 @@
-linux (3.5.0-27.45) quantal-proposed; urgency=low
+linux (3.5.0-27.45) precise-proposed; urgency=low
 
   [Steve Conklin]
 
@@ -19,7 +19,7 @@ linux (3.5.0-27.43) quantal-proposed; urgency=low
   [Steve Conklin]
 
   * Release Tracking Bug
-    - LP: #1156821
+    - LP: #1157270
 
   [ Adam Lee ]
 
