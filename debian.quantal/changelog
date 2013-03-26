@@ -1,4 +1,32 @@
-linux-lts-quantal (3.5.0-27.45~precise1) precise-proposed; urgency=low
+linux-lts-quantal (3.5.0-27.46~precise1) precise-proposed; urgency=low
+
+  [Steve Conklin]
+
+  * Release Tracking Bug
+    - LP: #1160183
+
+  [ Steve Conklin ]
+
+  * Start New Release
+
+  [ Upstream Kernel Changes ]
+
+  * crypto: user - fix info leaks in report API
+    - LP: #1156790, #1156795, #1156799
+    - CVE-2013-2546
+  * brcmsmac: fix mismatch in number of custom regulatory rules
+    - LP: #1156769
+
+  [ Xiangliang Yu ]
+
+  * SAUCE: PCI: define macro for marvell vendor ID
+    - LP: #1159863
+  * SAUCE: PCI: fix system hang issue of Marvell SATA host controller
+    - LP: #1159863
+
+ --  Steve Conklin <sconklin@canonical.com>  Mon, 25 Mar 2013 14:32:06 -0500
+
+linux (3.5.0-27.45) quantal-proposed; urgency=low
 
   [Steve Conklin]
 
@@ -19,7 +47,7 @@ linux (3.5.0-27.43) quantal-proposed; urgency=low
   [Steve Conklin]
 
   * Release Tracking Bug
-    - LP: #1156821
+    - LP: #1157270
 
   [ Adam Lee ]
 
