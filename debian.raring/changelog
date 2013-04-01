@@ -1,4 +1,29 @@
-linux-lts-raring (3.8.0-15.25~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-16.26~precise1) precise; urgency=low
+
+  [ Len Brown ]
+
+  * SAUCE: intel_idle: additional Haswell CPU-id
+    - LP: #1083993
+
+  [ Nishanth Menon ]
+
+  * SAUCE: cpufreq: OMAP: instantiate omap-cpufreq as a platform_driver
+
+  [ Tim Gardner ]
+
+  * Rebase to 3.8.5
+  * Release Tracking Bug
+    - LP: #1162956
+
+  [ Upstream Kernel Changes ]
+
+  * iwlwifi: add 7000 series device configuration
+    - LP: #1011422
+  * mac80211: prevent spurious HT/VHT downgrade message
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 28 Mar 2013 11:24:36 -0400
+
+linux (3.8.0-15.25) raring; urgency=low
 
   [ Andy Whitcroft ]
 
