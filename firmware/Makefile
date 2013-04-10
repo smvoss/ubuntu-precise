@@ -133,6 +133,15 @@ fw-shipped-$(CONFIG_R8169) +=	\
 	rtl_nic/rtl8168g-1.fw	\
 	rtl_nic/rtl8106e-1.fw
 
+fw-shipped-$(CONFIG_SND_ASIHPI) += \
+	asihpi/dsp5000.bin \
+	asihpi/dsp6200.bin \
+	asihpi/dsp6205.bin \
+	asihpi/dsp6400.bin \
+	asihpi/dsp6600.bin \
+	asihpi/dsp8700.bin \
+	asihpi/dsp8900.bin
+
 fw-shipped-all := $(fw-shipped-y) $(fw-shipped-m) $(fw-shipped-)
 
 # Directories which we _might_ need to create, so we have a rule for them.
