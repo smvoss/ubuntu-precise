@@ -142,6 +142,8 @@ fw-shipped-$(CONFIG_SND_ASIHPI) += \
 	asihpi/dsp8700.bin \
 	asihpi/dsp8900.bin
 
+fw-shipped-$(CONFIG_AR5523) += ar5523.bin
+
 fw-shipped-all := $(fw-shipped-y) $(fw-shipped-m) $(fw-shipped-)
 
 # Directories which we _might_ need to create, so we have a rule for them.
