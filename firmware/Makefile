@@ -146,6 +146,8 @@ fw-shipped-$(CONFIG_AR5523) += ar5523.bin
 
 fw-shipped-$(CONFIG_LIBERTAS) += libertas/sd8686_v9.bin
 
+fw-shipped-$(CONFIG_NETXEN_NIC) += phanfw.bin
+
 fw-shipped-all := $(fw-shipped-y) $(fw-shipped-m) $(fw-shipped-)
 
 # Directories which we _might_ need to create, so we have a rule for them.
