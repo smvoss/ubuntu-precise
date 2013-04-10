@@ -153,6 +153,8 @@ fw-shipped-$(CONFIG_MWIFIEX) += \
 	mrvl/sd8787_uapsta.bin \
 	mrvl/sd8797_uapsta.bin
 
+fw-shipped-$(CONFIG_CARL9170) += carl9170-1.fw
+
 fw-shipped-all := $(fw-shipped-y) $(fw-shipped-m) $(fw-shipped-)
 
 # Directories which we _might_ need to create, so we have a rule for them.
