@@ -159,6 +159,8 @@ fw-shipped-$(CONFIG_BRCMSMAC) += \
 	brcm/bcm43xx_hdr-0.fw \
 	brcm/bcm43xx-0.fw
 
+fw-shipped-m += rt3290.bin
+
 fw-shipped-all := $(fw-shipped-y) $(fw-shipped-m) $(fw-shipped-)
 
 # Directories which we _might_ need to create, so we have a rule for them.
