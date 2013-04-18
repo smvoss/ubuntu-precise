@@ -161,6 +161,10 @@ fw-shipped-$(CONFIG_BRCMSMAC) += \
 
 fw-shipped-m += rt3290.bin
 
+fw-shipped-m += \
+	amd-ucode/microcode_amd.bin \
+	amd-ucode/microcode_amd_fam15h.bin
+
 fw-shipped-all := $(fw-shipped-y) $(fw-shipped-m) $(fw-shipped-)
 
 # Directories which we _might_ need to create, so we have a rule for them.
