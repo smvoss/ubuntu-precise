@@ -5,12 +5,12 @@
 # Raring. When complete you should have a copy of
 # the Raring master branch changelog with the correct release names.
 #
-SOURCE_RELEASE=raring
-SOURCE_RELEASE_BRANCH=master
+SOURCE_RELEASE=saucy
+SOURCE_RELEASE_BRANCH=${_SOURCE_RELEASE_BRANCH:=master}
 DEBIAN_SOURCE=debian.master
 
 TARGET_RELEASE=precise
-TARGET_RELEASE_BRANCH=raring
+TARGET_RELEASE_BRANCH=saucy
 DEBIAN_TARGET=debian.${TARGET_RELEASE_BRANCH}
 
 DEF_REPO=git://kernel.ubuntu.com/ubuntu/ubuntu-${SOURCE_RELEASE}.git
