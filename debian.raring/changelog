@@ -1,3 +1,14 @@
+linux-lts-raring (3.8.0-19.29~precise2) precise; urgency=low
+
+   [ Tim Gardner ]
+
+   * UBUNTU: SAUCE: firmware: Add amd-ucode firmware
+   * UBUNTU: SAUCE: firmware: Add rt3290 firmware
+     Carry these firmware files in the kernel package since they are kernel version
+     specific and do not exist in Precise linux-firmware.
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Fri, 19 Apr 2013 08:09:01 -0600
+
 linux-lts-raring (3.8.0-19.29~precise1) precise; urgency=low
 
   [ Paolo Pisati ]
