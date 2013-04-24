@@ -1,9 +1,29 @@
-linux-lts-quantal (3.5.0-28.47~precise1) precise-proposed; urgency=low
+linux-lts-quantal (3.5.0-28.48~precise1) precise-proposed; urgency=low
+
+  [Brad Figg]
+
+  * Release Tracking Bug
+    - LP: #1172327
+
+  [ Steve Conklin ]
+
+  * Revert "drm/i915: GFX_MODE Flush TLB Invalidate Mode must be '1' for
+    scanline waits"
+    - LP: #1140716
+
+  [ Upstream Kernel Changes ]
+
+  * fbcon: fix locking harder
+    - LP: #1167114
+
+ -- Brad Figg <brad.figg@canonical.com>  Tue, 23 Apr 2013 14:01:06 -0700
+
+linux (3.5.0-28.47) quantal-proposed; urgency=low
 
   [Steve Conklin]
 
   * Release Tracking Bug
-    - LP: #1167157
+    - LP: #1166876
 
   [ Adam Lee ]
 
