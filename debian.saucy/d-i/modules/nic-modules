@@ -41,6 +41,7 @@ bnx2x ?
 bonding ?
 brcmfmac ?
 brcmsmac ?
+xgmac ?
 cassini ?
 com20020 ?
 com20020-pci ?
@@ -116,6 +117,7 @@ orinoco_pci ?
 orinoco_plx ?
 orinoco_tmd ?
 pcnet32 ?
+qlcnic ?
 r8169 ?
 rate_control ?
 rfc1051 ?
