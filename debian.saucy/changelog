@@ -1,4 +1,364 @@
-linux-lts-saucy (3.9.0-0.1~precise1) precise; urgency=low
+linux-lts-saucy (3.10.0-3.12~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * Release Tracking Bug
+    - LP: #1201467
+  * Revert "SAUCE: ext4: fix ext4_get_group_number() at cluster boundaries"
+
+  [ Stephen Warren ]
+
+  * [config] set CONFIG_SERIAL_OF_PLATFORM=y for armhf
+  * d-i: package DTBs in udebs
+  * put armhf dtb names on separate lines
+  * add Tegra support to armhf generic
+
+  [ Tim Gardner ]
+
+  * rebase to v3.10.1
+
+  [ Upstream Kernel Changes ]
+
+  * ext4: fix ext4_get_group_number()
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10.1
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Mon, 15 Jul 2013 06:21:35 -0600
+
+linux (3.10.0-2.11) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] enforce CONFIG_DEBUG_INFO
+  * SAUCE: intel_pstate -- toggle default to disable
+    - LP: #1188647
+  * [Packaging] add accellerators for binary-udeb
+  * SAUCE: ext4: fix ext4_get_group_number() at cluster boundaries
+    - LP: #1195710
+
+  [ John Johansen ]
+
+  * SAUCE: (no-up) apparmor: fix apparmor module status for none root users
+    - LP: #1199912
+
+  [ Leann Ogasawara ]
+
+  * d-i: Add qlcnic to nic-modules
+    - LP: #1196597
+
+  [ Tim Gardner ]
+
+  * [Debian] Prepare to build using arch specific compiler
+  * Build armhf using gcc-4.7
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Thu, 11 Jul 2013 08:56:44 -0600
+
+linux (3.10.0-2.10) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] CONFIG_INTEL_MEI*=m
+    - LP: #1196155
+  * [Config] CONFIG_DEBUG_INFO=y
+
+  [ Stephen Warren ]
+
+  * [Config] fix Calxeda xgmac module filename
+
+  [ Upstream Kernel Changes ]
+
+  * Revert "serial: 8250_pci: add support for another kind of NetMos
+    Technology PCI 9835 Multi-I/O Controller"
+    - LP: #1190967
+  * mfd: lpc_ich: Add support for Intel Avoton SoC
+    - LP: #1196658
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 05 Jul 2013 18:08:02 +0100
+
+linux (3.10.0-2.9) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * rebase to v3.10
+
+  [ John Johansen ]
+
+  * Revert "SAUCE: (no-up) apparmor: Fix quieting of audit messages for
+    network mediation"
+  * Revert "SAUCE: (no-up) apparmor: Fix compile warnings"
+  * Revert "SAUCE: (no-up) AppArmor: basic networking rules"
+  * Revert "SAUCE: (no-up) apparmor: Add the ability to mediate mount"
+  * Revert "SAUCE: (no-up) AppArmor: Add profile introspection file to
+    interface"
+  * Revert "SAUCE: (no-up) AppArmor: Disable Add PR_{GET,SET}_NO_NEW_PRIVS
+    to prevent execve from granting privs"
+  * SAUCE: (no-up) apparmor: Sync to apparmor 3 dev stable snapshot
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10
+
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 01 Jul 2013 17:42:29 +0100
+
+linux (3.10.0-1.8) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * Release Tracking Bug
+    - LP: #1195717
+
+  [ Andy Whitcroft ]
+
+  * Revert "ubuntu: overlayfs -- follow change to do_splice_direct
+    interface"
+  * Revert "ubuntu: overlayfs -- expose do_splice_direct prototype"
+  * Revert "SAUCE: ubuntu: overlayfs -- ovl_path_open should not take path
+    reference"
+  * Revert "ubuntu: overlayfs -- add FS_ALIAS"
+  * Revert "ubuntu: overlayfs --
+    overlayfs-copy-up-i_uid-i_gid-from-the-underlying-inode"
+  * Revert "ubuntu: overlayfs -- ovl-switch-to-inode_permission"
+  * Revert "ubuntu: overlayfs -- vfs-export-inode_permission-to-modules"
+  * Revert "ubuntu: overlayfs -- overlayfs-create-new-inode-in-ovl_link"
+  * Revert "ubuntu: overlayfs --
+    overlayfs-fix-possible-leak-in-ovl_new_inode"
+  * Revert "ubuntu: overlayfs -- fs-limit-filesystem-stacking-depth"
+  * Revert "ubuntu: overlayfs -- overlay-overlay-filesystem-documentation"
+  * Revert "ubuntu: overlayfs -- overlayfs-implement-show_options"
+  * Revert "ubuntu: overlayfs -- overlayfs-add-statfs-support"
+  * Revert "ubuntu: overlayfs -- overlay filesystem"
+  * Revert "ubuntu: overlayfs -- vfs-introduce-clone_private_mount"
+  * Revert "ubuntu: overlayfs -- vfs-export-do_splice_direct-to-modules"
+  * Revert "ubuntu: overlayfs -- vfs-add-i_op-dentry_open"
+  * ubuntu: overlayfs v18 -- -- overlayfs: add statfs support
+
+  [ Erez Zadok ]
+
+  * ubuntu: overlayfs v18 -- -- overlayfs: implement show_options
+
+  [ Miklos Szeredi ]
+
+  * ubuntu: overlayfs v18 -- -- vfs: add i_op->dentry_open()
+  * ubuntu: overlayfs v18 -- -- vfs: export do_splice_direct() to modules
+  * ubuntu: overlayfs v18 -- -- vfs: export __inode_permission() to modules
+  * ubuntu: overlayfs v18 -- -- vfs: introduce clone_private_mount()
+  * ubuntu: overlayfs v18 -- -- overlay filesystem
+  * ubuntu: overlayfs v18 -- -- fs: limit filesystem stacking depth
+
+  [ Neil Brown ]
+
+  * ubuntu: overlayfs v18 -- -- overlay: overlay filesystem documentation
+
+  [ Tim Gardner ]
+
+  * [Config] CONFIG_SUNRPC_DEBUG=y
+    - LP: #1127319
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 28 Jun 2013 10:26:52 +0100
+
+linux (3.10.0-0.7) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * autopkgtest: switch Depends: to build-essential
+
+ -- Andy Whitcroft <apw@canonical.com>  Tue, 25 Jun 2013 08:40:55 +0100
+
+linux (3.10.0-0.6) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] enable CONFIG_ARCH_TEGRA to fix FTBFS on armhf
+  * SAUCE: ubuntu: overlayfs -- ovl_path_open should not take path reference
+    - LP: #1098378
+  * ubuntu: AUFS -- update to 4f14cef47eb7c23eda7198931fbab1040866b6ee
+  * ubuntu: overlayfs -- expose do_splice_direct prototype
+  * ubuntu: overlayfs -- follow change to do_splice_direct interface
+  * [Config] flip CONFIG_NO_HZ_FULL_ALL off as it is overheating machines
+    - LP: #1192691
+
+  [ Stefan Bader ]
+
+  * (d-i) Add dm-snapshot to md-modules
+    - LP: #1191726
+
+  [ Tim Gardner ]
+
+  * Release tracker
+    - LP: #1194149
+  * [Config] CONFIG_WIL6210=n for armhf
+  * [Config] d-i: Add calxedaxgmac to nic-modules
+    - LP: #1192358
+  * [debian] Use dh_strip
+    - LP: #1192759
+  * [Config] Enable perf for armhf
+  * do_tools=false when cross compiling
+  * [Config] CONFIG_CORE_DUMP_DEFAULT_ELF_HEADERS=y
+    - LP: #1108082
+
+  [ Upstream Kernel Changes ]
+
+  * nsp32: switch reset delay to msleep() as it is tooo long
+  * alx: add a simple AR816x/AR817x device driver
+    Plucked from linux-next. replaces ubuntu/alx in favor of
+    'to be merged' version in 3.11.
+  * rebase to v3.10-rc7
+    - LP: #1189363
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Sat, 22 Jun 2013 18:10:31 -0600
+
+linux (3.10.0-0.5) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * rebase to v3.10-rc6
+  * [Config] updateconfigs following rebase to v3.10-rc6
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10-rc6
+
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 17 Jun 2013 11:12:39 +0100
+
+linux (3.10.0-0.4) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] updateconfigs following rebase to v3.10-rc4
+
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 10 Jun 2013 11:42:28 +0100
+
+linux (3.10.0-0.3) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * rebase to v3.10-rc5
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10-rc5
+    - LP: #1186170
+
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 10 Jun 2013 09:23:31 +0100
+
+linux (3.10.0-0.2) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * rebase to v3.10-rc4
+  * [Config] CONFIG_BINFMT_SCRIPT=y to fix booting initramfs scripts
+  * [Config] enable SND_PCM_DEBUG SND_PCM_XRUN_DEBUG
+    - LP: #1187744
+  * [Config] enforce CONFIG_BINFMT_SCRIPT=y
+
+  [ Dave Chiluk ]
+
+  * SAUCE: ncpfs: fix rmdir returns Device or resource busy
+    - LP: #1035226
+
+  [ Tim Gardner ]
+
+  * rebase to v3.10-rc3
+  * [Config] sparc be gone
+  * [Config] ia64 be gone
+  * d-i: block-modules provides nbd-modules
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10-rc4
+  * rebase to v3.10-rc3
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Tue, 28 May 2013 06:16:46 -0600
+
+linux (3.10.0-0.1) saucy; urgency=low
+
+  [ Tim Gardner ]
+
+  * UBUNTU: Disabled lttng
+  * UBUNTU: Disable aufs for FTBS
+  * UBUNTU: Disabled alx
+  * UBUNTU: alx: rename NETIF_F_HW_VLAN_* feature flags to NETIF_F_HW_VLAN_CTAG_*
+  * UBUNTU: rebase to v3.10-rc2
+  * UBUNTU: SAUCE: uvcvideo: quirk PROBE_DEF for Alienware X51 OmniVision webcam
+
+  [ Andy Whitcroft ]
+
+  * UBUNTU: [Config] update standards version to 3.9.4.0
+  * UBUNTU: [Config] squash duplicate package description (long and short)
+  * UBUNTU: [Config] fix up Vcs-git: to point to saucy
+  * UBUNTU: [Config] drop depenancy on util-linux as is Essential
+  * UBUNTU: [Config] drop redundant Build-Conficts:
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10-rc2
+    - LP: #1180351
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10-rc1
+    - LP: #1172151
+    - LP: #1089795
+    - LP: #1167270
+    - LP: #1128840
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Tue, 14 May 2013 13:41:07 -0600
+
+linux (3.10.0-0.0) saucy; urgency=low
+
+  * Dummy
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Thu, 09 May 2013 20:30:40 +0100
+
+linux (3.9.0-2.6) saucy; urgency=low
+
+  [ Tim Gardner ]
+
+  * rebase to v3.9.2
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Thu, 09 May 2013 20:30:40 +0100
+
+linux (3.9.0-1.5) saucy; urgency=low
+
+  [ Tim Gardner ]
+
+  * rebase to v3.9.1
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 08 May 2013 12:49:45 -0400
+
+linux (3.9.0-0.4) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * ubuntu: overlayfs -- add FS_ALIAS
+
+  [ Tim Gardner ]
+
+  * Added lttng
+    - LP: #1175784
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 02 May 2013 17:17:13 -0400
+
+linux (3.9.0-0.3) saucy; urgency=low
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.9
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 29 Apr 2013 18:20:00 -0400
+
+linux (3.9.0-0.2) saucy; urgency=low
+
+  [ Tim Gardner ]
+
+  * Enable extras packaging for amd64/i386.
+    Fixes build depenencies with brittany and linux-meta.
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Mon, 29 Apr 2013 05:37:01 -0600
+
+linux (3.9.0-0.1) saucy; urgency=low
 
   [ Upstream Kernel Changes ]
 
