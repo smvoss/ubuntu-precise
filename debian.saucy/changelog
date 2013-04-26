@@ -1,3 +1,10 @@
+linux-lts-saucy (3.9.0-0.1~precise2) precise; urgency=low
+
+  * Don't build perf which depends on universe package libaudit-dev
+  * Add bc as a build dependency
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Fri, 26 Apr 2013 08:38:30 -0600
+
 linux-lts-saucy (3.9.0-0.1~precise1) precise; urgency=low
 
   [ Upstream Kernel Changes ]
