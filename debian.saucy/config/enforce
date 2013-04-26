@@ -12,6 +12,7 @@ value CONFIG_SECURITY_SMACK y
 value CONFIG_SECURITY_YAMA y
 value CONFIG_SYN_COOKIES y
 value CONFIG_DEFAULT_SECURITY_APPARMOR y
+value CONFIG_DEBUG_INFO y
 # For architectures which support this option ensure it is enabled.
 !exists CONFIG_XEN_ACPI_PROCESSOR | value CONFIG_XEN_ACPI_PROCESSOR y
 !exists CONFIG_SECCOMP | value CONFIG_SECCOMP y
@@ -125,3 +126,6 @@ value CONFIG_I2C_DESIGNWARE_PLATFORM m | \
 # CONFIG_DRM_MGAG200, experimental driver hangs boot on HP Proliant Gen8
 # See LP:1042903
 (!exists CONFIG_DRM_MGAG200 | value CONFIG_DRM_MGAG200 n)
+
+# Required if /init is a shell script.
+value CONFIG_BINFMT_SCRIPT y
