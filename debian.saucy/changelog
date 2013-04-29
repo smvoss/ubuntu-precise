@@ -1,11 +1,13 @@
-linux-lts-saucy (3.9.0-0.1~precise2) precise; urgency=low
+linux-lts-saucy (3.9.0-0.2~precise1) precise; urgency=low
 
-  * Don't build perf which depends on universe package libaudit-dev
-  * Add bc as a build dependency
+  [ Tim Gardner ]
 
- --  Tim Gardner <tim.gardner@canonical.com>  Fri, 26 Apr 2013 08:38:30 -0600
+  * Enable extras packaging for amd64/i386.
+    Fixes build depenencies with brittany and linux-meta.
 
-linux-lts-saucy (3.9.0-0.1~precise1) precise; urgency=low
+ --  Tim Gardner <tim.gardner@canonical.com>  Mon, 29 Apr 2013 05:37:01 -0600
+
+linux (3.9.0-0.1) saucy; urgency=low
 
   [ Upstream Kernel Changes ]
 
