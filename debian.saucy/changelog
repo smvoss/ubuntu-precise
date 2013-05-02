@@ -1,4 +1,25 @@
-linux-lts-saucy (3.9.0-0.2~precise1) precise; urgency=low
+linux-lts-saucy (3.9.0-0.4~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * ubuntu: overlayfs -- add FS_ALIAS
+
+  [ Tim Gardner ]
+
+  * Added lttng
+    - LP: #1175784
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 02 May 2013 17:17:13 -0400
+
+linux (3.9.0-0.3) saucy; urgency=low
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.9
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 29 Apr 2013 18:20:00 -0400
+
+linux (3.9.0-0.2) saucy; urgency=low
 
   [ Tim Gardner ]
 
