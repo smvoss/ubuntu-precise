@@ -1,9 +1,19 @@
-linux-lts-raring (3.8.0-19.30~precise1) precise-proposed; urgency=low
+linux-lts-raring (3.8.0-21.32~precise1) precise-proposed; urgency=low
 
-  [Brad Figg]
+  [Steve Conklin]
 
   * Release Tracking Bug
-    - LP: #1175347
+    - LP: #11800201
+
+  [ Upstream Kernel Changes ]
+
+  * perf: Treat attr.config as u64 in perf_swevent_init()
+    - LP: #1179943
+    - CVE-2013-2094
+
+ -- Steve Conklin <sconklin@canonical.com>  Tue, 14 May 2013 14:19:21 -0500
+
+linux (3.8.0-19.30) raring; urgency=low
 
   [ Upstream Kernel Changes ]
 
@@ -27,12 +37,7 @@ linux-lts-raring (3.8.0-19.30~precise1) precise-proposed; urgency=low
     - LP: #1174827
     - CVE-2013-1979
 
-  [ Tim Gardner ]
-
-  * UBUNTU: SAUCE: firmware: Add rt3290 firmware
-  * UBUNTU: SAUCE: firmware: Add amd-ucode firmware
-
- -- Brad Figg <brad.figg@canonical.com>  Wed, 01 May 2013 14:11:52 -0700
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 18 Apr 2013 11:21:24 -0400
 
 linux (3.8.0-19.29) raring; urgency=low
 
