@@ -1,4 +1,25 @@
-linux-lts-saucy (3.9.0-1.5~precise1) precise; urgency=low
+linux-lts-saucy (3.9.0-2.7~precise1) precise; urgency=low
+
+  [ Joseph Salisbury ]
+
+  * SAUCE: uvcvideo: quirk PROBE_DEF for Alienware X51 OmniVision webcam
+    - LP: #1180409
+
+  [ Tim Gardner ]
+
+  * rebase to v3.9.3
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 16 May 2013 14:11:56 -0400
+
+linux (3.9.0-2.6) saucy; urgency=low
+
+  [ Tim Gardner ]
+
+  * rebase to v3.9.2
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Thu, 09 May 2013 20:30:40 +0100
+
+linux (3.9.0-1.5) saucy; urgency=low
 
   [ Tim Gardner ]
 
