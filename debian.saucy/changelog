@@ -1,4 +1,32 @@
-linux-lts-saucy (3.9.0-2.7~precise1) precise; urgency=low
+linux-lts-saucy (3.9.0-3.8~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] drop redundant Build-Conficts:
+  * [Config] drop depenancy on util-linux as is Essential
+  * [Config] fix up Vcs-git: to point to saucy
+  * [Config] squash duplicate package description (long and short)
+  * [Config] update standards version to 3.9.4.0
+
+  [ Tim Gardner ]
+
+  * Release Tracking Bug
+    - LP: #1185110
+  * updateconfigs
+  * rebase to v3.9.4
+
+  [ Upstream Kernel Changes ]
+
+  * perf/x86/amd: Add support for AMD NB and L2I "uncore" counters
+    - LP: #1117552
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.9.4
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 21 May 2013 08:16:31 -0400
+
+linux (3.9.0-2.7) saucy; urgency=low
 
   [ Joseph Salisbury ]
 
