@@ -1,9 +1,23 @@
-linux-lts-quantal (3.5.0-31.52~precise1) precise-proposed; urgency=low
+linux-lts-quantal (3.5.0-32.53~precise1) precise-proposed; urgency=low
 
   [Steve Conklin]
 
   * Release Tracking Bug
-    - LP: #1181071
+    - LP: #1185505
+
+  [ Upstream Kernel Changes ]
+
+  * iscsi-target: fix heap buffer overflow on error
+    - CVE-2013-2850
+
+ -- Steve Conklin <sconklin@canonical.com>  Tue, 28 May 2013 15:17:15 -0500
+
+linux (3.5.0-31.52) quantal-proposed; urgency=low
+
+  [Steve Conklin]
+
+  * Release Tracking Bug
+    - LP: #1180568
   * merged back in delta from 28.48 to 29.49
 
  -- Steve Conklin <sconklin@canonical.com>  Wed, 15 May 2013 16:25:01 -0500
