@@ -1,12 +1,28 @@
-linux-lts-raring (3.8.0-22.33~precise1) precise-proposed; urgency=low
+linux-lts-raring (3.8.0-23.34~precise1) precise-proposed; urgency=low
 
   [Steve Conklin]
 
   * Release Tracking Bug
-    - LP: #1181023
+    - LP: #1185517
+
+  [Steve Conklin]
+
+  [ Upstream Kernel Changes ]
+
+  * iscsi-target: fix heap buffer overflow on error
+    - CVE-2013-2850
+
+ -- Steve Conklin <sconklin@canonical.com>  Tue, 28 May 2013 13:19:38 -0500
+
+linux (3.8.0-22.33) raring-proposed; urgency=low
+
+  [Steve Conklin]
+
+  * Release Tracking Bug
+    - LP: #1180483
   * merged back all changes which were in 20.31
 
- -- Brad Figg <brad.figg@canonical.com>  Thu, 16 May 2013 16:00:26 -0700
+ -- Steve Conklin <sconklin@canonical.com>  Wed, 15 May 2013 14:00:19 -0500
 
 linux (3.8.0-21.32) raring-proposed; urgency=low
 
