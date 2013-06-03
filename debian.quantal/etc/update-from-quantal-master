@@ -22,7 +22,7 @@ FOREIGN_ARCHES="armel ia64 powerpc sparc config.common.ports"
 # PPAs do not have a proposed pocket. The default assumes the
 # real archive is the upload target.
 #
-POCKET="-proposed"
+POCKET=""
 IGNORE_ABI=""
 IGNORE_MODULES=""
 
