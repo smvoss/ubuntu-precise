@@ -1,9 +1,23 @@
-linux-lts-raring (3.8.0-24.35~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-25.37~precise1) precise; urgency=low
 
   [Steve Conklin]
 
   * Release Tracking Bug
-    - LP: #1186433
+    - LP: #1188463
+
+  [ Upstream Kernel Changes ]
+
+  * iwlwifi: dvm: fix zero LQ CMD sending avoidance
+    - LP: #1186932
+
+ -- Steve Conklin <sconklin@canonical.com>  Wed, 05 Jun 2013 11:21:20 -0500
+
+linux (3.8.0-24.35) raring; urgency=low
+
+  [Steve Conklin]
+
+  * Release Tracking Bug
+    - LP: #1186236
 
   [ Joseph Salisbury ]
 
