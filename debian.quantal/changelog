@@ -1,9 +1,23 @@
-linux-lts-quantal (3.5.0-33.54~precise1) precise; urgency=low
+linux-lts-quantal (3.5.0-34.55~precise1) precise; urgency=low
 
   [Steve Conklin]
 
   * Release Tracking Bug
-    - LP: #1186478
+    - LP: #1188496
+
+  [ Upstream Kernel Changes ]
+
+  * iwlwifi: dvm: fix zero LQ CMD sending avoidance
+    - LP: #1186932
+
+ -- Steve Conklin <sconklin@canonical.com>  Wed, 05 Jun 2013 15:27:36 -0500
+
+linux (3.5.0-33.54) quantal; urgency=low
+
+  [Steve Conklin]
+
+  * Release Tracking Bug
+    - LP: #1186271
 
   [ Upstream Kernel Changes ]
 
