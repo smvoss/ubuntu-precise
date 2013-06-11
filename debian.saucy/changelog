@@ -1,4 +1,32 @@
-linux-lts-saucy (3.9.0-4.9~precise1) precise; urgency=low
+linux-lts-saucy (3.9.0-5.11~precise1) precise; urgency=low
+
+  [ Tim Gardner ]
+
+  * HAVE_CPLUS_DEMANGLE=n
+    Fixes FTBS because binutils-dev no longer publishes liberty.
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Tue, 11 Jun 2013 11:08:48 -0600
+
+linux (3.9.0-5.10) saucy; urgency=low
+
+  [ Dave Chiluk ]
+
+  * SAUCE: ncpfs: fix rmdir returns Device or resource busy
+    - LP: #1035226
+
+  [ Tim Gardner ]
+
+  * d-i: block-modules provides nbd-modules
+  * Release Tracking Bug
+    - LP: #1189899
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.9.5
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 11 Jun 2013 08:44:48 -0400
+
+linux (3.9.0-4.9) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
