@@ -1,4 +1,20 @@
-linux-lts-saucy (3.9.0-3.8~precise1) precise; urgency=low
+linux-lts-saucy (3.9.0-4.9~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * Release Tracking Bug
+    - LP: #1187795
+  * [Config] enable SND_PCM_DEBUG SND_PCM_XRUN_DEBUG
+    - LP: #1187744
+
+  [ Kees Cook ]
+
+  * SAUCE: iscsi-target: fix heap buffer overflow on error
+    - CVE-2013-2850
+
+ -- Andy Whitcroft <apw@canonical.com>  Wed, 05 Jun 2013 14:38:54 +0100
+
+linux (3.9.0-3.8) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
