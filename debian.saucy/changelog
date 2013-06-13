@@ -1,4 +1,17 @@
-linux-lts-saucy (3.9.0-5.11~precise1) precise; urgency=low
+linux-lts-saucy (3.9.0-5.12~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * Revert "HAVE_CPLUS_DEMANGLE=n"
+  * SAUCE: intel_pstate -- toggle default to disable
+    - LP: #1188647
+  * SAUCE: ubuntu: overlayfs -- ovl_path_open should not take path
+    reference
+    - LP: #1098378
+
+ -- Andy Whitcroft <apw@canonical.com>  Wed, 12 Jun 2013 13:28:56 +0100
+
+linux (3.9.0-5.11) saucy; urgency=low
 
   [ Tim Gardner ]
 
