@@ -1,4 +1,17 @@
-linux-lts-saucy (3.9.0-5.12~precise1) precise; urgency=low
+linux-lts-saucy (3.9.0-6.13~precise1) precise; urgency=low
+
+  [ Tim Gardner ]
+
+  * Release Tracking Bug
+    - LP: #1191038
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.9.6
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Fri, 14 Jun 2013 08:23:39 -0400
+
+linux (3.9.0-5.12) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
