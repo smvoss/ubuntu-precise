@@ -1,9 +1,9 @@
-linux-lts-raring (3.8.0-26.38~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-26.38~precise2) precise; urgency=low
 
   [Steve Conklin]
 
   * Release Tracking Bug
-    - LP: #1191955
+    - LP: #1192035
 
   [ Dave Chiluk ]
 
