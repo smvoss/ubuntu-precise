@@ -1,4 +1,47 @@
-linux-lts-saucy (3.9.0-6.13~precise1) precise; urgency=low
+linux-lts-saucy (3.9.0-7.15~precise1) precise; urgency=low
+
+  [ Tim Gardner ]
+
+  * [debian] Use dh_strip
+    - LP: #1192759
+  * [Config] Enable perf for armhf
+  * do_tools=false when cross compiling
+  * rebase to v3.9.7
+  * [Config] CONFIG_CORE_DUMP_DEFAULT_ELF_HEADERS=y
+    - LP: #1108082
+  * Release Tracking Bug
+    - LP: #1193189
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.9.7
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Thu, 20 Jun 2013 22:32:49 -0400
+
+linux (3.9.0-6.14) saucy; urgency=low
+
+  [ Stefan Bader ]
+
+  * (d-i) Add dm-snapshot to md-modules
+    - LP: #1191726
+
+  [ Tim Gardner ]
+
+  * SAUCE: Updated lttng to 5ca7b8a36c04e0733b6661d519343eb586d75a51
+  * [Config] d-i: Add calxedaxgmac to nic-modules
+    - LP: #1192358
+  * Release Tracking Bug
+    - LP: #1192633
+
+  [ Upstream Kernel Changes ]
+
+  * alx: add a simple AR816x/AR817x device driver
+    cherry-picked from linux-next, replaces ubuntu/alx. upstream
+    merge expected in 3.11
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Wed, 19 Jun 2013 08:59:51 -0600
+
+linux (3.9.0-6.13) saucy; urgency=low
 
   [ Tim Gardner ]
 
