@@ -1,24 +1,15 @@
-linux-lts-saucy (3.9.0-7.15~precise1) precise; urgency=low
+linux-lts-saucy (3.10.0-0.6~precise1) precise; urgency=low
 
-  [ Tim Gardner ]
+  [ Andy Whitcroft ]
 
-  * [debian] Use dh_strip
-    - LP: #1192759
-  * [Config] Enable perf for armhf
-  * do_tools=false when cross compiling
-  * rebase to v3.9.7
-  * [Config] CONFIG_CORE_DUMP_DEFAULT_ELF_HEADERS=y
-    - LP: #1108082
-  * Release Tracking Bug
-    - LP: #1193189
-
-  [ Upstream Kernel Changes ]
-
-  * rebase to v3.9.7
-
- --  Tim Gardner <tim.gardner@canonical.com>  Thu, 20 Jun 2013 22:32:49 -0400
-
-linux (3.9.0-6.14) saucy; urgency=low
+  * [Config] enable CONFIG_ARCH_TEGRA to fix FTBFS on armhf
+  * SAUCE: ubuntu: overlayfs -- ovl_path_open should not take path reference
+    - LP: #1098378
+  * ubuntu: AUFS -- update to 4f14cef47eb7c23eda7198931fbab1040866b6ee
+  * ubuntu: overlayfs -- expose do_splice_direct prototype
+  * ubuntu: overlayfs -- follow change to do_splice_direct interface
+  * [Config] flip CONFIG_NO_HZ_FULL_ALL off as it is overheating machines
+    - LP: #1192691
 
   [ Stefan Bader ]
 
@@ -27,56 +18,72 @@ linux (3.9.0-6.14) saucy; urgency=low
 
   [ Tim Gardner ]
 
-  * SAUCE: Updated lttng to 5ca7b8a36c04e0733b6661d519343eb586d75a51
+  * Release tracker
+    - LP: #1194149
+  * [Config] CONFIG_WIL6210=n for armhf
   * [Config] d-i: Add calxedaxgmac to nic-modules
     - LP: #1192358
-  * Release Tracking Bug
-    - LP: #1192633
+  * [debian] Use dh_strip
+    - LP: #1192759
+  * [Config] Enable perf for armhf
+  * do_tools=false when cross compiling
+  * [Config] CONFIG_CORE_DUMP_DEFAULT_ELF_HEADERS=y
+    - LP: #1108082
 
   [ Upstream Kernel Changes ]
 
+  * nsp32: switch reset delay to msleep() as it is tooo long
   * alx: add a simple AR816x/AR817x device driver
-    cherry-picked from linux-next, replaces ubuntu/alx. upstream
-    merge expected in 3.11
+    Plucked from linux-next. replaces ubuntu/alx in favor of
+    'to be merged' version in 3.11.
+  * rebase to v3.10-rc7
+    - LP: #1189363
 
- --  Tim Gardner <tim.gardner@canonical.com>  Wed, 19 Jun 2013 08:59:51 -0600
+ --  Tim Gardner <tim.gardner@canonical.com>  Sat, 22 Jun 2013 18:10:31 -0600
 
-linux (3.9.0-6.13) saucy; urgency=low
-
-  [ Tim Gardner ]
-
-  * Release Tracking Bug
-    - LP: #1191038
-
-  [ Upstream Kernel Changes ]
-
-  * rebase to v3.9.6
-
- --  Tim Gardner <tim.gardner@canonical.com>  Fri, 14 Jun 2013 08:23:39 -0400
-
-linux (3.9.0-5.12) saucy; urgency=low
+linux (3.10.0-0.5) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
-  * Revert "HAVE_CPLUS_DEMANGLE=n"
-  * SAUCE: intel_pstate -- toggle default to disable
-    - LP: #1188647
-  * SAUCE: ubuntu: overlayfs -- ovl_path_open should not take path
-    reference
-    - LP: #1098378
+  * rebase to v3.10-rc6
+  * [Config] updateconfigs following rebase to v3.10-rc6
 
- -- Andy Whitcroft <apw@canonical.com>  Wed, 12 Jun 2013 13:28:56 +0100
+  [ Upstream Kernel Changes ]
 
-linux (3.9.0-5.11) saucy; urgency=low
+  * rebase to v3.10-rc6
 
-  [ Tim Gardner ]
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 17 Jun 2013 11:12:39 +0100
 
-  * HAVE_CPLUS_DEMANGLE=n
-    Fixes FTBS because binutils-dev no longer publishes liberty.
+linux (3.10.0-0.4) saucy; urgency=low
 
- --  Tim Gardner <tim.gardner@canonical.com>  Tue, 11 Jun 2013 11:08:48 -0600
+  [ Andy Whitcroft ]
 
-linux (3.9.0-5.10) saucy; urgency=low
+  * [Config] updateconfigs following rebase to v3.10-rc4
+
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 10 Jun 2013 11:42:28 +0100
+
+linux (3.10.0-0.3) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * rebase to v3.10-rc5
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10-rc5
+    - LP: #1186170
+
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 10 Jun 2013 09:23:31 +0100
+
+linux (3.10.0-0.2) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * rebase to v3.10-rc4
+  * [Config] CONFIG_BINFMT_SCRIPT=y to fix booting initramfs scripts
+  * [Config] enable SND_PCM_DEBUG SND_PCM_XRUN_DEBUG
+    - LP: #1187744
+  * [Config] enforce CONFIG_BINFMT_SCRIPT=y
 
   [ Dave Chiluk ]
 
@@ -85,72 +92,57 @@ linux (3.9.0-5.10) saucy; urgency=low
 
   [ Tim Gardner ]
 
+  * rebase to v3.10-rc3
+  * [Config] sparc be gone
+  * [Config] ia64 be gone
   * d-i: block-modules provides nbd-modules
-  * Release Tracking Bug
-    - LP: #1189899
 
   [ Upstream Kernel Changes ]
 
-  * rebase to v3.9.5
+  * rebase to v3.10-rc4
+  * rebase to v3.10-rc3
 
- -- Tim Gardner <tim.gardner@canonical.com>  Tue, 11 Jun 2013 08:44:48 -0400
+ --  Tim Gardner <tim.gardner@canonical.com>  Tue, 28 May 2013 06:16:46 -0600
 
-linux (3.9.0-4.9) saucy; urgency=low
-
-  [ Andy Whitcroft ]
-
-  * Release Tracking Bug
-    - LP: #1187795
-  * [Config] enable SND_PCM_DEBUG SND_PCM_XRUN_DEBUG
-    - LP: #1187744
-
-  [ Kees Cook ]
-
-  * SAUCE: iscsi-target: fix heap buffer overflow on error
-    - CVE-2013-2850
-
- -- Andy Whitcroft <apw@canonical.com>  Wed, 05 Jun 2013 14:38:54 +0100
-
-linux (3.9.0-3.8) saucy; urgency=low
-
-  [ Andy Whitcroft ]
-
-  * [Config] drop redundant Build-Conficts:
-  * [Config] drop depenancy on util-linux as is Essential
-  * [Config] fix up Vcs-git: to point to saucy
-  * [Config] squash duplicate package description (long and short)
-  * [Config] update standards version to 3.9.4.0
+linux (3.10.0-0.1) saucy; urgency=low
 
   [ Tim Gardner ]
 
-  * Release Tracking Bug
-    - LP: #1185110
-  * updateconfigs
-  * rebase to v3.9.4
+  * UBUNTU: Disabled lttng
+  * UBUNTU: Disable aufs for FTBS
+  * UBUNTU: Disabled alx
+  * UBUNTU: alx: rename NETIF_F_HW_VLAN_* feature flags to NETIF_F_HW_VLAN_CTAG_*
+  * UBUNTU: rebase to v3.10-rc2
+  * UBUNTU: SAUCE: uvcvideo: quirk PROBE_DEF for Alienware X51 OmniVision webcam
+
+  [ Andy Whitcroft ]
+
+  * UBUNTU: [Config] update standards version to 3.9.4.0
+  * UBUNTU: [Config] squash duplicate package description (long and short)
+  * UBUNTU: [Config] fix up Vcs-git: to point to saucy
+  * UBUNTU: [Config] drop depenancy on util-linux as is Essential
+  * UBUNTU: [Config] drop redundant Build-Conficts:
 
   [ Upstream Kernel Changes ]
 
-  * perf/x86/amd: Add support for AMD NB and L2I "uncore" counters
-    - LP: #1117552
+  * rebase to v3.10-rc2
+    - LP: #1180351
 
   [ Upstream Kernel Changes ]
 
-  * rebase to v3.9.4
+  * rebase to v3.10-rc1
+    - LP: #1172151
+    - LP: #1089795
+    - LP: #1167270
+    - LP: #1128840
 
- -- Tim Gardner <tim.gardner@canonical.com>  Tue, 21 May 2013 08:16:31 -0400
+ --  Tim Gardner <tim.gardner@canonical.com>  Tue, 14 May 2013 13:41:07 -0600
 
-linux (3.9.0-2.7) saucy; urgency=low
+linux (3.10.0-0.0) saucy; urgency=low
 
-  [ Joseph Salisbury ]
+  * Dummy
 
-  * SAUCE: uvcvideo: quirk PROBE_DEF for Alienware X51 OmniVision webcam
-    - LP: #1180409
-
-  [ Tim Gardner ]
-
-  * rebase to v3.9.3
-
- -- Tim Gardner <tim.gardner@canonical.com>  Thu, 16 May 2013 14:11:56 -0400
+ --  Tim Gardner <tim.gardner@canonical.com>  Thu, 09 May 2013 20:30:40 +0100
 
 linux (3.9.0-2.6) saucy; urgency=low
 
