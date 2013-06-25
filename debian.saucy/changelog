@@ -1,4 +1,12 @@
-linux-lts-saucy (3.10.0-0.6~precise1) precise; urgency=low
+linux-lts-saucy (3.10.0-0.7~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * autopkgtest: switch Depends: to build-essential
+
+ -- Andy Whitcroft <apw@canonical.com>  Tue, 25 Jun 2013 08:40:55 +0100
+
+linux (3.10.0-0.6) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
