@@ -1,4 +1,32 @@
-linux-lts-saucy (3.10.0-2.10~precise1) precise; urgency=low
+linux-lts-saucy (3.10.0-2.11~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] enforce CONFIG_DEBUG_INFO
+  * SAUCE: intel_pstate -- toggle default to disable
+    - LP: #1188647
+  * [Packaging] add accellerators for binary-udeb
+  * SAUCE: ext4: fix ext4_get_group_number() at cluster boundaries
+    - LP: #1195710
+
+  [ John Johansen ]
+
+  * SAUCE: (no-up) apparmor: fix apparmor module status for none root users
+    - LP: #1199912
+
+  [ Leann Ogasawara ]
+
+  * d-i: Add qlcnic to nic-modules
+    - LP: #1196597
+
+  [ Tim Gardner ]
+
+  * [Debian] Prepare to build using arch specific compiler
+  * Build armhf using gcc-4.7
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Thu, 11 Jul 2013 08:56:44 -0600
+
+linux (3.10.0-2.10) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
