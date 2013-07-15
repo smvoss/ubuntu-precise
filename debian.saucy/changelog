@@ -1,4 +1,33 @@
-linux-lts-saucy (3.10.0-2.11~precise1) precise; urgency=low
+linux-lts-saucy (3.10.0-3.12~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * Release Tracking Bug
+    - LP: #1201467
+  * Revert "SAUCE: ext4: fix ext4_get_group_number() at cluster boundaries"
+
+  [ Stephen Warren ]
+
+  * [config] set CONFIG_SERIAL_OF_PLATFORM=y for armhf
+  * d-i: package DTBs in udebs
+  * put armhf dtb names on separate lines
+  * add Tegra support to armhf generic
+
+  [ Tim Gardner ]
+
+  * rebase to v3.10.1
+
+  [ Upstream Kernel Changes ]
+
+  * ext4: fix ext4_get_group_number()
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10.1
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Mon, 15 Jul 2013 06:21:35 -0600
+
+linux (3.10.0-2.11) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
