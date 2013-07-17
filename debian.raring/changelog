@@ -1,3 +1,16 @@
+linux-lts-raring (3.8.0-27.40~precise2) precise; urgency=low
+
+  * Add build support for armhf
+    UBUNTU: update-from-raring-master: Add armhf support
+    UBUNTU: do_tools=false when cross compiling
+    UBUNTU: Added armhf build and packaging support
+    - LP: #1202333
+
+  * Release Tracking Bug
+    - LP: #1202355
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Wed, 17 Jul 2013 11:09:19 -0600
+
 linux-lts-raring (3.8.0-27.40~precise1) precise; urgency=low
 
   [Brad Figg]
