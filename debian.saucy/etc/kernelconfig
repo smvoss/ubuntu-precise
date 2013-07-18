@@ -1,7 +1,7 @@
 if [ "$variant" = "ports" ]; then
-	archs=""
+	archs="armhf"
 	family='ports'
 else
-	archs="amd64 i386"
+	archs="amd64 i386 armhf"
 	family='ubuntu'
 fi
