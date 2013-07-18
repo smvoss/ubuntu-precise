@@ -1,4 +1,23 @@
-linux-lts-saucy (3.10.0-3.12~precise1) precise; urgency=low
+linux-lts-saucy (3.10.0-4.13~precise1) precise; urgency=low
+
+  [ Joseph Salisbury ]
+
+  * SAUCE: (no-up) hyperv: Fix the NETIF_F_SG flag setting in netvsc
+    - LP: #1200243
+
+  [ Tim Gardner ]
+
+  * [Config] CONFIG_DYNAMIC_DEBUG=y
+    - LP: #1202018
+
+  [ Upstream Kernel Changes ]
+
+  * mfd: rtsx: Add support for RTL8411B
+    - LP: #1201321
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Tue, 16 Jul 2013 06:41:44 -0600
+
+linux (3.10.0-3.12) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
