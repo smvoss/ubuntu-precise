@@ -19,7 +19,7 @@ Description: Header files related to Linux kernel version PKGVER
  /usr/share/doc/SRCPKGNAME-headers-PKGVER-ABINUM/debian.README.gz for details
 
 Package: linux-tools-PKGVER-ABINUM
-Architecture: i386 amd64
+Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
 Depends: ${misc:Depends}, ${shlibs:Depends}, linux-tools-common
