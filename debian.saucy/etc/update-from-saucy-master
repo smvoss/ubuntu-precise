@@ -102,6 +102,12 @@ rsync -av --delete ${DEBIAN_SOURCE}/d-i/ ${DEBIAN_TARGET}/d-i
 # Update configs from master
 #
 rsync -av --delete ${DEBIAN_SOURCE}/config/ ${DEBIAN_TARGET}/config
+#
+# Build in these 2 modules for arm in order to avoid
+# a missing __aeabi_uldivmod symbol.
+#
+sed -i 's/CONFIG_DM_CACHE=m/CONFIG_DM_CACHE=y/' debian.saucy/config/config.common.ubuntu
+sed -i 's/CONFIG_MEGARAID_SAS=m/CONFIG_MEGARAID_SAS=y/' debian.saucy/config/config.common.ubuntu
 fakeroot debian/rules clean updateconfigs
 
 #
