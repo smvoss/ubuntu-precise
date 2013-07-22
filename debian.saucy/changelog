@@ -1,4 +1,83 @@
-linux-lts-saucy (3.10.0-4.13~precise1) precise; urgency=low
+linux-lts-saucy (3.10.0-6.16~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Packaging] fix SRCPKGNAME-udebs-FLAVOUR handling for complex flavours
+
+  [ Paolo Pisati ]
+
+  * [Config] add an armhf/generic-lpae flavour
+  * [Config] ARM_LPAE=y
+  * [Config] disable TI OMAP2+ support (ARCH_OMAP2PLUS)
+  * [Config] disable Freescale imx support (ARCH_MXC)
+  * [Config] disable Broadcom bcm support (ARCH_BCM)
+  * [Config] disable Allwinner a1x support (ARCH_SUNXI)
+  * [Config] disable Nvidia tegra support (ARCH_TEGRA)
+
+  [ Rob Herring ]
+
+  * SAUCE: ARM: highbank: Only touch common coherency control register
+    fields
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10.3
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Fri, 26 Jul 2013 08:26:13 -0600
+
+linux (3.10.0-5.15) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Config] add iwldvm to nic-modules
+    - LP: #1204194
+
+  [ Tim Gardner ]
+
+  * [Debian] Supply PKG_ABI in kmake
+    - LP: #1193172
+  * SAUCE: (no-up) hv: Supply vendor ID and package ABI
+    - LP: #1193172
+
+  [ Upstream Kernel Changes ]
+
+  * efivars: check for EFI_RUNTIME_SERVICES
+    - LP: #1200570
+  * drm/radeon/hdmi: make sure we have an afmt block assigned
+  * Input: elantech - fix for newer hardware versions (v7)
+    - LP: #1166442
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Tue, 23 Jul 2013 07:42:49 -0600
+
+linux (3.10.0-5.14) saucy; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * Release Tracking Bug
+    - LP: #1203779
+
+  * Revert "SAUCE: (no-up) add option to hand off all kernel parameters to
+    init"
+    - LP: #1203211
+  * [Packaging] generate a SRCPKGNAME-udebs-FLAVOUR-di depending on all
+    built udebs
+  * [Config] enable SRCPKG-udeb-FLAVOUR-di for master
+  * [Config] enforcer -- relax CONFIG_INIT_PASS_ALL_PARAMS until we fix the
+    associated patch
+    - LP: #1203211
+  * rebase to v3.10.2
+
+  [ Stephen Warren ]
+
+  * add missing i2c-tegra module into armhf udebs
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10.2
+
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 22 Jul 2013 16:09:25 +0100
+
+linux (3.10.0-4.13) saucy; urgency=low
 
   [ Joseph Salisbury ]
 
