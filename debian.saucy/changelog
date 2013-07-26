@@ -1,4 +1,31 @@
-linux-lts-saucy (3.10.0-5.15~precise1) precise; urgency=low
+linux-lts-saucy (3.10.0-6.16~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Packaging] fix SRCPKGNAME-udebs-FLAVOUR handling for complex flavours
+
+  [ Paolo Pisati ]
+
+  * [Config] add an armhf/generic-lpae flavour
+  * [Config] ARM_LPAE=y
+  * [Config] disable TI OMAP2+ support (ARCH_OMAP2PLUS)
+  * [Config] disable Freescale imx support (ARCH_MXC)
+  * [Config] disable Broadcom bcm support (ARCH_BCM)
+  * [Config] disable Allwinner a1x support (ARCH_SUNXI)
+  * [Config] disable Nvidia tegra support (ARCH_TEGRA)
+
+  [ Rob Herring ]
+
+  * SAUCE: ARM: highbank: Only touch common coherency control register
+    fields
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.10.3
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Fri, 26 Jul 2013 08:26:13 -0600
+
+linux (3.10.0-5.15) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
