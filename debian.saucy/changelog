@@ -1,157 +1,92 @@
-linux-lts-saucy (3.10.0-6.16~precise1) precise; urgency=low
-
-  [ Andy Whitcroft ]
-
-  * [Packaging] fix SRCPKGNAME-udebs-FLAVOUR handling for complex flavours
-
-  [ Paolo Pisati ]
-
-  * [Config] add an armhf/generic-lpae flavour
-  * [Config] ARM_LPAE=y
-  * [Config] disable TI OMAP2+ support (ARCH_OMAP2PLUS)
-  * [Config] disable Freescale imx support (ARCH_MXC)
-  * [Config] disable Broadcom bcm support (ARCH_BCM)
-  * [Config] disable Allwinner a1x support (ARCH_SUNXI)
-  * [Config] disable Nvidia tegra support (ARCH_TEGRA)
-
-  [ Rob Herring ]
-
-  * SAUCE: ARM: highbank: Only touch common coherency control register
-    fields
-
-  [ Upstream Kernel Changes ]
-
-  * rebase to v3.10.3
-
- --  Tim Gardner <tim.gardner@canonical.com>  Fri, 26 Jul 2013 08:26:13 -0600
-
-linux (3.10.0-5.15) saucy; urgency=low
-
-  [ Andy Whitcroft ]
-
-  * [Config] add iwldvm to nic-modules
-    - LP: #1204194
+linux-lts-saucy (3.11.0-2.5~precise1) precise; urgency=low
 
   [ Tim Gardner ]
 
-  * [Debian] Supply PKG_ABI in kmake
-    - LP: #1193172
-  * SAUCE: (no-up) hv: Supply vendor ID and package ABI
-    - LP: #1193172
+  * [Config] CONFIG_PM_DEBUG=y
+    - LP: #1210539
+  * rebase to v3.11-rc5
+  * Release tracker
+    - LP: #1211378
 
-  [ Upstream Kernel Changes ]
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 12 Aug 2013 06:10:39 -0600
 
-  * efivars: check for EFI_RUNTIME_SERVICES
-    - LP: #1200570
-  * drm/radeon/hdmi: make sure we have an afmt block assigned
-  * Input: elantech - fix for newer hardware versions (v7)
-    - LP: #1166442
-
- --  Tim Gardner <tim.gardner@canonical.com>  Tue, 23 Jul 2013 07:42:49 -0600
-
-linux (3.10.0-5.14) saucy; urgency=low
-
-  [ Andy Whitcroft ]
-
-  * Release Tracking Bug
-    - LP: #1203779
-
-  * Revert "SAUCE: (no-up) add option to hand off all kernel parameters to
-    init"
-    - LP: #1203211
-  * [Packaging] generate a SRCPKGNAME-udebs-FLAVOUR-di depending on all
-    built udebs
-  * [Config] enable SRCPKG-udeb-FLAVOUR-di for master
-  * [Config] enforcer -- relax CONFIG_INIT_PASS_ALL_PARAMS until we fix the
-    associated patch
-    - LP: #1203211
-  * rebase to v3.10.2
-
-  [ Stephen Warren ]
-
-  * add missing i2c-tegra module into armhf udebs
-
-  [ Upstream Kernel Changes ]
-
-  * rebase to v3.10.2
-
- -- Andy Whitcroft <apw@canonical.com>  Mon, 22 Jul 2013 16:09:25 +0100
-
-linux (3.10.0-4.13) saucy; urgency=low
-
-  [ Joseph Salisbury ]
-
-  * SAUCE: (no-up) hyperv: Fix the NETIF_F_SG flag setting in netvsc
-    - LP: #1200243
+linux (3.11.0-1.4) saucy; urgency=low
 
   [ Tim Gardner ]
 
-  * [Config] CONFIG_DYNAMIC_DEBUG=y
-    - LP: #1202018
+  * Bump ABI when making changes to the inclusion list lest
+    you cause conflicts with existing installed kernel
+    packages.
+    - LP: #1210331
 
-  [ Upstream Kernel Changes ]
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 09 Aug 2013 03:03:51 +0100
 
-  * mfd: rtsx: Add support for RTL8411B
-    - LP: #1201321
-
- --  Tim Gardner <tim.gardner@canonical.com>  Tue, 16 Jul 2013 06:41:44 -0600
-
-linux (3.10.0-3.12) saucy; urgency=low
-
-  [ Andy Whitcroft ]
-
-  * Release Tracking Bug
-    - LP: #1201467
-  * Revert "SAUCE: ext4: fix ext4_get_group_number() at cluster boundaries"
-
-  [ Stephen Warren ]
-
-  * [config] set CONFIG_SERIAL_OF_PLATFORM=y for armhf
-  * d-i: package DTBs in udebs
-  * put armhf dtb names on separate lines
-  * add Tegra support to armhf generic
+linux (3.11.0-0.3) saucy; urgency=low
 
   [ Tim Gardner ]
 
-  * rebase to v3.10.1
+  * [Config] Include rbd and kvm in the virtual inclusion list
+    - LP: #1206961
+  * [Config] Removed obsolete inclusion list entries
 
-  [ Upstream Kernel Changes ]
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 06 Aug 2013 08:52:14 +0100
 
-  * ext4: fix ext4_get_group_number()
+linux (3.11.0-0.2) saucy; urgency=low
 
-  [ Upstream Kernel Changes ]
+  [ Bruce Allan ]
 
-  * rebase to v3.10.1
-
- --  Tim Gardner <tim.gardner@canonical.com>  Mon, 15 Jul 2013 06:21:35 -0600
-
-linux (3.10.0-2.11) saucy; urgency=low
-
-  [ Andy Whitcroft ]
-
-  * [Config] enforce CONFIG_DEBUG_INFO
-  * SAUCE: intel_pstate -- toggle default to disable
-    - LP: #1188647
-  * [Packaging] add accellerators for binary-udeb
-  * SAUCE: ext4: fix ext4_get_group_number() at cluster boundaries
-    - LP: #1195710
+  * SAUCE: (no-up) e1000e: fix I217/I218 PHY initialization flow
+    - LP: #1206757
+  * SAUCE: (no-up) e1000e: enable support for new device IDs
+    - LP: #1206757
 
   [ John Johansen ]
 
-  * SAUCE: (no-up) apparmor: fix apparmor module status for none root users
-    - LP: #1199912
+  * SAUCE: (no-up) apparmor: Sync to apparmor 3 dev stable snapshot
 
-  [ Leann Ogasawara ]
+  [ Paolo Pisati ]
 
-  * d-i: Add qlcnic to nic-modules
-    - LP: #1196597
+  * build vexpress a15 dtb
+  * [Config] disable Broadcom bcm support (ARCH_BCM)
+  * [Config] disable Allwinner a1x support (ARCH_SUNXI)
+  * [Config] disable WonderMedia WM8850 support (ARCH_WM8850)
+  * [Config] disable Rockchip support (ARCH_ROCKCHIP)
+  * [Config] disable STMicroelectronics STiH41x SOCs (ARCH_STI)
+  * [Config] disable TI Keystone, AM43xx and OMAP5 support
+  * [Config] ARM_APPENDED_DTB=y
 
   [ Tim Gardner ]
 
-  * [Debian] Prepare to build using arch specific compiler
-  * Build armhf using gcc-4.7
+  * rebase to v3.11-rc4
+  * overlayfs: Update to v19
+  * [Config] Enable overlayfs
+  * SAUCE: Fix lttng compile errors
 
- --  Tim Gardner <tim.gardner@canonical.com>  Thu, 11 Jul 2013 08:56:44 -0600
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.11-rc4
+    - LP: #1163720
+    - LP: #1162026
+    - LP: #1195636
+    - LP: #1195597
+    - LP: #1180409
+    - LP: #1168430
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Sun, 04 Aug 2013 03:45:31 -0600
+
+linux (3.11.0-0.1) saucy; urgency=low
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to 64ccccf8525fee499625b517c0faadf784c79e93
+    - LP: #1163720
+    - LP: #1162026
+    - LP: #1195636
+    - LP: #1195597
+    - LP: #1180409
+    - LP: #1168430
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Mon, 08 Jul 2013 08:50:46 -0600
 
 linux (3.10.0-2.10) saucy; urgency=low
 
