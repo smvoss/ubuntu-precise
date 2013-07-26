@@ -1,4 +1,17 @@
-linux-lts-saucy (3.10.0-6.16~precise1) precise; urgency=low
+linux-lts-saucy (3.10.0-6.17~precise1) precise; urgency=low
+
+  * Release tracker
+    - LP: #1205408
+
+  [ Andy Whitcroft ]
+
+  * UBUNTU: [Config] Build-Depend: on gawk to ensure consistant awk in all and arch
+    Explicitly reference gawk in rules files.
+    Fixes FTBS on buildds
+
+ --  Tim Gardner <tim.gardner@canonical.com>  Fri, 26 Jul 2013 09:30:06 -0600
+
+linux (3.10.0-6.16) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
