@@ -227,6 +227,9 @@ fw-shipped-$(CONFIG_R8169) +=	\
 	rtl_nic/rtl8168g-3.fw	\
 	rtl_nic/rtl8411-2.fw
 
+fw-shipped-$(CONFIG_RTLWIFI) += \
+	rtlwifi/rtl8188efw.bin
+
 fw-shipped-m += rt3290.bin
 
 fw-shipped-m += \
