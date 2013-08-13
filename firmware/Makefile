@@ -239,6 +239,9 @@ fw-shipped-$(CONFIG_USB_BTMTK) += \
 fw-shipped-$(CONFIG_MWL8K) += \
 	mwl8k/fmimage_8366_ap-3.fw
 
+fw-shipped-$(CONFIG_SERIAL_RP2) += \
+	rp2.fw
+
 fw-shipped-m += rt3290.bin
 
 fw-shipped-m += \
