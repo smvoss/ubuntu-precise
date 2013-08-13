@@ -169,6 +169,11 @@ fw-shipped-$(CONFIG_IWLWIFI) +=	\
 	iwlwifi-3160-7.ucode	\
 	iwlwifi-7260-7.ucode
 
+fw-shipped-$(CONFIG_MWIFIEX) += 	\
+	mrvl/pcie8897_uapsta.bin	\
+	mrvl/sd8688.bin			\
+	mrvl/sd8688_helper.bin
+
 fw-shipped-m += rt3290.bin
 
 fw-shipped-m += \
