@@ -174,6 +174,53 @@ fw-shipped-$(CONFIG_MWIFIEX) += 	\
 	mrvl/sd8688.bin			\
 	mrvl/sd8688_helper.bin
 
+fw-shipped-$(CONFIG_DRM_RADEON) +=	\
+	radeon/BARTS_smc.bin		\
+	radeon/BONAIRE_ce.bin		\
+	radeon/BONAIRE_mc.bin		\
+	radeon/BONAIRE_me.bin		\
+	radeon/BONAIRE_mec.bin		\
+	radeon/BONAIRE_pfp.bin		\
+	radeon/BONAIRE_rlc.bin		\
+	radeon/BONAIRE_sdma.bin		\
+	radeon/BONAIRE_uvd.bin		\
+	radeon/CAICOS_smc.bin		\
+	radeon/CAYMAN_smc.bin		\
+	radeon/CEDAR_smc.bin		\
+	radeon/CYPRESS_smc.bin		\
+	radeon/CYPRESS_uvd.bin		\
+	radeon/HAINAN_ce.bin		\
+	radeon/HAINAN_mc.bin		\
+	radeon/HAINAN_me.bin		\
+	radeon/HAINAN_pfp.bin		\
+	radeon/HAINAN_rlc.bin		\
+	radeon/HAINAN_smc.bin		\
+	radeon/JUNIPER_smc.bin		\
+	radeon/KABINI_ce.bin		\
+	radeon/KABINI_me.bin		\
+	radeon/KABINI_mec.bin		\
+	radeon/KABINI_pfp.bin		\
+	radeon/KABINI_rlc.bin		\
+	radeon/KABINI_sdma.bin		\
+	radeon/OLAND_ce.bin		\
+	radeon/OLAND_mc.bin		\
+	radeon/OLAND_me.bin		\
+	radeon/OLAND_pfp.bin		\
+	radeon/OLAND_rlc.bin		\
+	radeon/OLAND_smc.bin		\
+	radeon/PITCAIRN_smc.bin		\
+	radeon/REDWOOD_smc.bin		\
+	radeon/RV710_smc.bin		\
+	radeon/RV710_uvd.bin		\
+	radeon/RV730_smc.bin		\
+	radeon/RV740_smc.bin		\
+	radeon/RV770_smc.bin		\
+	radeon/SUMO_uvd.bin		\
+	radeon/TAHITI_smc.bin		\
+	radeon/TAHITI_uvd.bin		\
+	radeon/TURKS_smc.bin		\
+	radeon/VERDE_smc.bin
+
 fw-shipped-m += rt3290.bin
 
 fw-shipped-m += \
