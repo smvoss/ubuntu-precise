@@ -152,6 +152,9 @@ fw-shipped-$(CONFIG_BRCMSMAC) += \
 	brcm/bcm43xx_hdr-0.fw \
 	brcm/bcm43xx-0.fw
 
+fw-shipped-$(CONFIG_SND_HDA_CODEC_CA0132_DSP) += \
+	ctefx.bin
+
 fw-shipped-m += rt3290.bin
 
 fw-shipped-m += \
