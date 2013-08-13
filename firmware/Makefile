@@ -165,6 +165,10 @@ fw-shipped-$(CONFIG_VIDEO_GO7007) +=	\
 	go7007/s2250-2.fw		\
 	go7007/wis-startrek.fw
 
+fw-shipped-$(CONFIG_IWLWIFI) +=	\
+	iwlwifi-3160-7.ucode	\
+	iwlwifi-7260-7.ucode
+
 fw-shipped-m += rt3290.bin
 
 fw-shipped-m += \
