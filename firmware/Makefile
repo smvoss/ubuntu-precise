@@ -155,6 +155,16 @@ fw-shipped-$(CONFIG_BRCMSMAC) += \
 fw-shipped-$(CONFIG_SND_HDA_CODEC_CA0132_DSP) += \
 	ctefx.bin
 
+fw-shipped-$(CONFIG_VIDEO_GO7007) +=	\
+	go7007/go7007fw.bin		\
+	go7007/go7007tv.bin		\
+	go7007/lr192.fw			\
+	go7007/px-m402u.fw		\
+	go7007/px-tv402u.fw		\
+	go7007/s2250-1.fw		\
+	go7007/s2250-2.fw		\
+	go7007/wis-startrek.fw
+
 fw-shipped-m += rt3290.bin
 
 fw-shipped-m += \
