@@ -233,6 +233,9 @@ fw-shipped-$(CONFIG_RTLWIFI) += \
 fw-shipped-$(CONFIG_WL12XX) += \
 	ti-connectivity/wl18xx-fw-2.bin
 
+fw-shipped-$(CONFIG_USB_BTMTK) += \
+	mt7650.bin
+
 fw-shipped-m += rt3290.bin
 
 fw-shipped-m += \
