@@ -230,6 +230,9 @@ fw-shipped-$(CONFIG_R8169) +=	\
 fw-shipped-$(CONFIG_RTLWIFI) += \
 	rtlwifi/rtl8188efw.bin
 
+fw-shipped-$(CONFIG_WL12XX) += \
+	ti-connectivity/wl18xx-fw-2.bin
+
 fw-shipped-m += rt3290.bin
 
 fw-shipped-m += \
