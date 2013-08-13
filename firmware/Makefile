@@ -221,6 +221,12 @@ fw-shipped-$(CONFIG_DRM_RADEON) +=	\
 	radeon/TURKS_smc.bin		\
 	radeon/VERDE_smc.bin
 
+fw-shipped-$(CONFIG_R8169) +=	\
+	rtl_nic/rtl8106e-2.fw	\
+	rtl_nic/rtl8168g-2.fw	\
+	rtl_nic/rtl8168g-3.fw	\
+	rtl_nic/rtl8411-2.fw
+
 fw-shipped-m += rt3290.bin
 
 fw-shipped-m += \
