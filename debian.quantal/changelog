@@ -1,9 +1,24 @@
-linux-lts-quantal (3.5.0-38.59~precise1) precise; urgency=low
+linux-lts-quantal (3.5.0-39.60~precise1) precise; urgency=low
 
   [Brad Figg]
 
   * Release Tracking Bug
-    - LP: #1205678
+    - LP: #1212049
+
+  [ Upstream Kernel Changes ]
+
+  * Revert "veth: avoid a NULL deref in veth_stats_one"
+  * Revert "veth: extend device features"
+  * Revert "veth: reduce stat overhead"
+
+ -- Brad Figg <brad.figg@canonical.com>  Tue, 13 Aug 2013 10:26:38 -0700
+
+linux (3.5.0-38.59) quantal; urgency=low
+
+  [Brad Figg]
+
+  * Release Tracking Bug
+    - LP: #1205440
 
   [ Upstream Kernel Changes ]
 
@@ -230,7 +245,7 @@ linux-lts-quantal (3.5.0-38.59~precise1) precise; urgency=low
     - LP: #1188356
     - CVE-2013-2148
 
- -- Brad Figg <brad.figg@canonical.com>  Sat, 27 Jul 2013 20:24:19 -0700
+ -- Brad Figg <brad.figg@canonical.com>  Fri, 26 Jul 2013 11:00:32 -0700
 
 linux (3.5.0-37.58) quantal; urgency=low
 
