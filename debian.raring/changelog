@@ -1,9 +1,24 @@
-linux-lts-raring (3.8.0-28.41~precise1) precise; urgency=low
+linux-lts-raring (3.8.0-29.42~precise1) precise; urgency=low
 
   [Brad Figg]
 
   * Release Tracking Bug
-    - LP: #1205538
+    - LP: #1212057
+
+  [ Upstream Kernel Changes ]
+
+  * Revert "veth: avoid a NULL deref in veth_stats_one"
+  * Revert "veth: extend device features"
+  * Revert "veth: reduce stat overhead"
+
+ -- Brad Figg <brad.figg@canonical.com>  Tue, 13 Aug 2013 11:53:26 -0700
+
+linux (3.8.0-28.41) raring; urgency=low
+
+  [Brad Figg]
+
+  * Release Tracking Bug
+    - LP: #1205373
 
   [ Andy Whitcroft ]
 
@@ -350,7 +365,7 @@ linux-lts-raring (3.8.0-28.41~precise1) precise; urgency=low
     - LP: #1202992
     - CVE-2013-4127
 
- -- Brad Figg <brad.figg@canonical.com>  Sun, 28 Jul 2013 10:13:46 -0700
+ -- Brad Figg <brad.figg@canonical.com>  Fri, 26 Jul 2013 08:14:02 -0700
 
 linux (3.8.0-27.40) raring; urgency=low
 
