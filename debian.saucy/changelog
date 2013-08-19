@@ -1,4 +1,39 @@
-linux-lts-saucy (3.11.0-2.5~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-3.6~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Packaging] tools: conditionalise x86 and hyper-v tools sensibly
+  * [Config] tools: enable x86 and hyper-v
+
+  [ John Johansen ]
+
+  * Revert "SAUCE: (no-up) apparmor: Sync to apparmor 3 dev stable
+    snapshot"
+  * Revert "SAUCE: (no-up) apparmor: fix apparmor module status for none
+    root users"
+  * SAUCE: (no-up) apparmor: Sync to apparmor 3 - alpha 4 snapshot
+
+  [ Joseph Salisbury ]
+
+  * SAUCE: (no-up) intel_ips: blacklist ASUSTek G60JX laptops
+    - LP: #1210848
+
+  [ Kamal Mostafa ]
+
+  * [debian] tools: ship 'cpupower' in linux-tools
+    - LP: #1158668
+  * [Config] Build-dep on libpci-dev for cpu tools
+    - LP: #1158668
+
+  [ Tim Gardner ]
+
+  * rebase to v3.11-rc6
+  * Release tracker
+    - LP: #1213941
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 16 Aug 2013 07:02:07 -0600
+
+linux (3.11.0-2.5) saucy; urgency=low
 
   [ Tim Gardner ]
 
