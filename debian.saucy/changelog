@@ -1,4 +1,104 @@
-linux-lts-saucy (3.11.0-3.6~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-5.10~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * Release tracker
+    - LP: #1220222
+  * Revert "[Config] Fix ubuntu directoy Kbuilds"
+  * Revert "aufs update dropped some Kbuild files"
+  * Revert "ubuntu: AUFS -- follow rename of loop.h into drivers/block"
+  * Revert "ubuntu: AUFS -- update to
+    8e503d4142c189ed6c47a2177ad2cd058e8d340e"
+  * Revert "ubuntu: (no-squash) AUFS3 -- aufs3-standalone.patch"
+  * Revert "ubuntu: (no-squash) AUFS3 -- aufs3-base.patch"
+  * rebase to v3.11 final
+  * [Config] clean up ubuntu/Kconfig and ubuntu/Makefile
+  * ubuntu: AUFS (no-squash): basic framework and update machinary
+  * ubuntu: (no-squash) AUFS3 -- aufs3-base.patch
+  * ubuntu: (no-squash) AUFS3 -- aufs3-standalone.patch
+  * ubuntu: AUFS -- update to 5ac5fe26a90a818218310e208d17688fddb07622
+  * ubuntu: (no-squash) AUFS -- enable aufs
+  * ubuntu: AUFS -- fix remaining d_count references to use accessor
+  * ubuntu: lttng -- follow rename of pid_ns
+  * SAUCE: disable stack-protector for ARM compressed bootloader
+
+  [ Paolo Pisati ]
+
+  * [Config] ARM_ATAG_DTB_COMPAT=y
+
+  [ Rob Herring ]
+
+  * [Config] Enable KVM and virtio for armhf generic-lpae
+
+  [ Tim Gardner ]
+
+  * [Config] CONFIG_ARPD=y
+  * [Config] CONFIG_ZSWAP=y
+    - LP: #1215379
+
+  [ Upstream Kernel Changes ]
+
+  * uvcvideo: quirk PROBE_DEF for Dell SP2008WFP monitor.
+    - LP: #1217957
+  * ARM: use phys_addr_t for DMA zone sizes
+  * ARM: highbank: enable DMA zone for LPAE
+  * ARM: highbank: select ARCH_HAS_HOLES_MEMORYMODEL
+  * ARM: highbank: select required errata work-arounds
+  * DMA: fix AMBA PL08x compilation issue with 64bit DMA address type
+  * DMA: fix printk warning in AMBA PL08x DMA driver
+  * ARM: highbank: select ARCH_DMA_ADDR_T_64BIT for LPAE
+  * ARM: move outer_cache declaration out of ifdef
+  * ARM: highbank: avoid L2 cache smc calls when PL310 is not present
+  * ARM: highbank: clean-up some unused includes
+  * ARM: xen: only set pm function ptrs for Xen guests
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.11
+
+ -- Andy Whitcroft <apw@canonical.com>  Tue, 03 Sep 2013 17:08:06 +0100
+
+linux (3.11.0-4.9) saucy; urgency=low
+
+  [ Tim Gardner ]
+
+  * rebase to v3.11-rc7
+  * Release tracker
+    - LP: #1216962
+
+  [ Upstream Kernel Changes ]
+
+  * mwifiex: do not create AP and P2P interfaces upon driver loading
+    - LP: #1212720
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 26 Aug 2013 06:25:35 -0600
+
+linux (3.11.0-3.8) saucy; urgency=low
+
+  [ Johannes Berg ]
+
+  * SAUCE: mac80211: ignore (E)CSA in probe response frames
+    - LP: #1201470
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 23 Aug 2013 09:47:36 -0600
+
+linux (3.11.0-3.7) saucy; urgency=low
+
+  [ Tim Gardner ]
+
+  * SAUCE: (no-up) hv_vss_daemon -- prevent self-daemonising to allow
+    upstart to track
+  * SAUCE: (no-up) hv -- bodge hv_vss_daemon so it can use the local
+    linux/hyperv.h
+  * SAUCE: hv: Add vss daemon to Makefile
+  * [Debian] Add hv_vss_daemon to tools package
+    - LP: #1213282
+  * [Config] Fix ubuntu directoy Kbuilds
+    - LP: #1181755
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 20 Aug 2013 08:34:05 -0600
+
+linux (3.11.0-3.6) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
