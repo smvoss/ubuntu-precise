@@ -1,4 +1,13 @@
-linux-lts-saucy (3.11.0-3.7~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-3.8~precise1) precise; urgency=low
+
+  [ Johannes Berg ]
+
+  * SAUCE: mac80211: ignore (E)CSA in probe response frames
+    - LP: #1201470
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 23 Aug 2013 09:47:36 -0600
+
+linux (3.11.0-3.7) saucy; urgency=low
 
   [ Tim Gardner ]
 
