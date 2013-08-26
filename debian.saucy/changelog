@@ -1,4 +1,19 @@
-linux-lts-saucy (3.11.0-3.8~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-4.9~precise1) precise; urgency=low
+
+  [ Tim Gardner ]
+
+  * rebase to v3.11-rc7
+  * Release tracker
+    - LP: #1216962
+
+  [ Upstream Kernel Changes ]
+
+  * mwifiex: do not create AP and P2P interfaces upon driver loading
+    - LP: #1212720
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 26 Aug 2013 06:25:35 -0600
+
+linux (3.11.0-3.8) saucy; urgency=low
 
   [ Johannes Berg ]
 
