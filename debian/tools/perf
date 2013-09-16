@@ -5,12 +5,12 @@ full_version=`uname -r`
 flavour_abi=${full_version#*-}
 flavour=${flavour_abi#*-}
 version=${full_version%-$flavour}
-this="$0_$version"
+perf="perf_$version"
 
-if [ ! -f "$this" ]; then
-    echo "$this not found" >&2
+if ! which "$perf" > /dev/null; then
+    echo "$perf not found" >&2
     echo "You may need to install linux-tools-$version" >&2
     exit 2
 fi
 
-exec "$this" "$@"
+exec "$perf" "$@"
