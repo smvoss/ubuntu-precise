@@ -1,4 +1,41 @@
-linux-lts-saucy (3.11.0-7.13~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-7.14~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Packaging] sort out linux-tools naming
+    - LP: #1205284
+  * [Packaging] linux-tools: switch to common generic version helper
+
+  [ Paolo Pisati ]
+
+  * [Config] highbank: ecx1000: CPU_IDLE causes instabilities, disable it
+
+  [ Tim Gardner ]
+
+  * Release tracker
+    - LP: #1226160
+
+  [ Tony Lindgren ]
+
+  * SAUCE: ARM: dts: Fix muxing and regulator for wl12xx on the SDIO bus
+    for pandaboard
+
+  [ Upstream Kernel Changes ]
+
+  * USB: handle LPM errors during device suspend correctly
+    - LP: #1011415
+  * usb: don't check pm qos NO_POWER_OFF flag in usb_port_suspend()
+    - LP: #1011415
+  * usb: Don't fail port power resume on device disconnect.
+    - LP: #1011415
+
+  [ Upstream Kernel Changes ]
+
+  * rebase to v3.11.1
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 11 Sep 2013 07:30:17 -0600
+
+linux (3.11.0-7.13) saucy; urgency=low
 
   * Release tracker
     - LP: #1223545
