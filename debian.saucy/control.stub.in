@@ -29,7 +29,7 @@ Description: Linux kernel version specific tools for version PKGVER
  version locked tools (such as perf and x86_energy_perf_policy) for
  version PGKVER.
 
-Package: linux-tools-PKGVER-ABINUM
+Package: SRCPKGNAME-tools-PKGVER-ABINUM
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
