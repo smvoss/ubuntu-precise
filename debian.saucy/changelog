@@ -1,4 +1,61 @@
-linux-lts-saucy (3.11.0-11.17~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-12.18~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * [Packing] tools -- when tools are off they are off
+  * [config] tools -- linux-tools-common really is common
+  * [Packaging] tools -- make cpupower optional
+  * [Packaging] tools -- fix crosscompilation
+  * [config] tools -- enable cpupower
+  * SAUCE: storvsc -- host takes MAINTENANCE_IN commands badly elide them
+    - LP: #1234417
+
+  [ John Johansen ]
+
+  * Revert "UBUNTU: SAUCE: apparmor: fix unix domain sockets to be mediated on connection"
+    Not required for Precise user space, and furthermore, will cause networking to fail without
+    apparmor 2.8.0-0ubuntu30
+  * SAUCE: apparmor: allocate path lookup buffers during init
+    - LP: #1208988
+  * SAUCE: apparmor: fix memleak of the profile hash
+    - LP: #1235523
+  * SAUCE: apparmor: fix memleak of replacedby struct
+    - LP: #1235973
+  * SAUCE: apparmor: fix bad lock balance when introspecting policy
+    - LP: #1235977
+
+  [ Paolo Pisati ]
+
+  * [Config] arm: VIRTIO_[BLK|NET|MMIO]=y
+
+  [ Rob Herring ]
+
+  * SAUCE: (no-up) net: calxedaxgmac: fix clearing of old filter addresses
+    - LP: #1235272
+  * SAUCE: (no-up) net: calxedaxgmac: add uc and mc filter addresses in
+    promiscuous mode
+    - LP: #1235272
+  * SAUCE: (no-up) net: calxedaxgmac: determine number of address filters
+    at runtime
+    - LP: #1235272
+
+  [ Tim Gardner ]
+
+  * [Config] CONFIG_ANDROID=n
+    - LP: #1235161
+  * [Config] CONFIG_L2TP_V3=y
+    - LP: #1235914
+  * Release tracker
+    - LP: #1236999
+
+  [ Upstream Kernel Changes ]
+
+  * Revert "HID: core: fix reporting of raw events"
+    - LP: #1218004
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 04 Oct 2013 13:08:59 +0100
+
+linux (3.11.0-11.17) saucy; urgency=low
 
   [ Andy Whitcroft ]
 
