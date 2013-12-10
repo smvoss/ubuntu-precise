@@ -1,9 +1,23 @@
-linux-lts-saucy (3.11.0-15.22~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-15.23~precise1) precise; urgency=low
 
   [Brad Figg]
 
   * Release Tracking Bug
-    - LP: #1257175
+    - LP: #1259259
+
+  [ Tim Gardner ]
+
+  * [Config] Build-in ohci-pci
+    - LP: #1244176
+
+ -- Brad Figg <brad.figg@canonical.com>  Mon, 09 Dec 2013 09:41:31 -0800
+
+linux (3.11.0-15.22) saucy; urgency=low
+
+  [Brad Figg]
+
+  * Release Tracking Bug
+    - LP: #1257092
 
   [ Andy Whitcroft ]
 
@@ -381,7 +395,7 @@ linux-lts-saucy (3.11.0-15.22~precise1) precise; urgency=low
   * Linux 3.11.10
     - LP: #1257037
 
- -- Brad Figg <brad.figg@canonical.com>  Wed, 04 Dec 2013 09:04:37 -0800
+ -- Brad Figg <brad.figg@canonical.com>  Mon, 02 Dec 2013 14:29:15 -0800
 
 linux (3.11.0-14.21) saucy; urgency=low
 
