@@ -2052,7 +2052,6 @@ ocfs2_stackglue
 ocfs2_stack_o2cb
 ocfs2_stack_user
 ocrdma
-ohci-pci
 old_belkin-sir
 olpc_apsp
 omap
@@ -2328,7 +2327,6 @@ raid456
 raid6_pq
 raid6test
 raid_class
-ramoops
 raw
 rbd
 rbtree_test
@@ -2445,7 +2443,6 @@ rds_rdma
 rds_tcp
 redboot
 redrat3
-reed_solomon
 reiserfs
 remoteproc
 renesas_usbhs
@@ -2535,7 +2532,6 @@ rtc-pcf8523
 rtc-pcf8563
 rtc-pcf8583
 rtc-pl030
-rtc-pl031
 rtc-r9701
 rtc-rc5t583
 rtc-rp5c01
