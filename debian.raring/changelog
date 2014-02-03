@@ -343,6 +343,15 @@ linux-lts-raring (3.8.0-36.51~precise1) precise; urgency=low
 
  -- Brad Figg <brad.figg@canonical.com>  Mon, 06 Jan 2014 14:09:51 -0800
 
+linux-lts-raring (3.8.0-35.52~precise1) precise; urgency=low
+
+  [ John Johansen ]
+
+  * SAUCE: Fix compat_sys_recvmsg on x32 archs
+    - LP: #1274349
+
+ -- Brad Figg <brad.figg@canonical.com>  Thu, 30 Jan 2014 08:39:03 -0800
+
 linux-lts-raring (3.8.0-35.50~precise1) precise; urgency=low
 
   [Steve Conklin]
