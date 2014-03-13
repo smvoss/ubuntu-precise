@@ -54,7 +54,6 @@ install-%: instfile = $(call custom_override,install_file,$*)
 install-%: hdrdir = $(CURDIR)/debian/$(basepkg)-$*/usr/src/$(basepkg)-$*
 install-%: target_flavour = $*
 install-%: dtb_files = $(dtb_files_$*)
-install-%: CONFIG_MODULE_SIG_HASH=sha512
 install-%: MODSECKEY=$(builddir)/build-$*/signing_key.priv
 install-%: MODPUBKEY=$(builddir)/build-$*/signing_key.x509
 install-%: checks-%
@@ -215,8 +214,7 @@ ifneq ($(skipdbg),true)
 			$(CROSS_COMPILE)objcopy \
 				--add-gnu-debuglink=$(dbgpkgdir)/usr/lib/debug/$$module \
 				$(pkgdir)/$$module; \
-			scripts/sign-file $(CONFIG_MODULE_SIG_HASH) $(MODSECKEY) $(MODPUBKEY) \
-				$(pkgdir)/$$module; \
+			scripts/sign-file $(MODSECKEY) $(MODPUBKEY) $(pkgdir)/$$module; \
 		fi; \
 	done
 	rm -f $(dbgpkgdir)/usr/lib/debug/lib/modules/$(abi_release)-$*/build
