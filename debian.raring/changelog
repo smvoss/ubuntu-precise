@@ -1,3 +1,11 @@
+linux-lts-raring (3.8.0-38.56~precise1) precise; urgency=low
+
+  [ Andy Whitcroft ]
+
+  * module signature does not use hash type in older releases
+
+ -- Brad Figg <brad.figg@canonical.com>  Thu, 13 Mar 2014 08:42:48 -0700
+
 linux-lts-raring (3.8.0-38.55~precise1) precise; urgency=low
 
   [ Kamal Mostafa ]
