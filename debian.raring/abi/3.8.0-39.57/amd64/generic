@@ -5612,6 +5612,7 @@ EXPORT_SYMBOL vmlinux 0x6074c18e	pci_set_mwi
 EXPORT_SYMBOL vmlinux 0x60932987	__task_pid_nr_ns
 EXPORT_SYMBOL vmlinux 0x609f1c7e	synchronize_net
 EXPORT_SYMBOL vmlinux 0x60a32ea9	pm_power_off
+EXPORT_SYMBOL vmlinux 0x60c36144	neigh_app_ns
 EXPORT_SYMBOL vmlinux 0x60dabd66	xfrm4_rcv_encap
 EXPORT_SYMBOL vmlinux 0x60eb7d24	__skb_checksum_complete
 EXPORT_SYMBOL vmlinux 0x60f21583	__wait_on_bit_lock
@@ -11387,6 +11388,7 @@ EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x44da6b56	snd_soc_put_volsw_sx
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x488ac2b0	snd_soc_poweroff
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x48c75785	snd_soc_info_xr_sx
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x4a479105	snd_soc_put_volsw_range
+EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x50cb776e	snd_soc_dapm_enable_pin_unlocked
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x554ca326	snd_soc_unregister_platform
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x5826f20c	snd_soc_cache_sync
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x590da0df	snd_soc_bulk_write_raw
@@ -11395,6 +11397,7 @@ EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x5bdf9a22	snd_soc_free_ac97_codec
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x6236ce6d	snd_soc_info_volsw_ext
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x630468e5	snd_soc_get_pcm_runtime
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x67b80e79	dpcm_be_dai_trigger
+EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x6959a856	snd_soc_dapm_force_enable_pin_unlocked
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x69fb478b	snd_soc_put_enum_double
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x6e4cd798	snd_soc_dapm_get_enum_virt
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x71b79720	snd_soc_dapm_free
@@ -11410,6 +11413,8 @@ EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x8380494a	snd_soc_dai_set_channel_map
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x83947d68	snd_soc_dai_set_tristate
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x85bd5f19	snd_soc_jack_get_type
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x868df44b	snd_soc_dai_set_pll
+EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x86a8c5bd	snd_soc_dapm_nc_pin_unlocked
+EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x8766030c	snd_soc_dapm_disable_pin_unlocked
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x88986509	snd_soc_jack_new
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x8cdc7ed6	snd_soc_update_bits
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x8d9c2cff	snd_soc_of_parse_audio_routing

@@ -4201,6 +4201,7 @@ EXPORT_SYMBOL vmlinux 0x01139ffc	max_mapnr
 EXPORT_SYMBOL vmlinux 0x0130dd60	ip4_datagram_connect
 EXPORT_SYMBOL vmlinux 0x01495cc8	journal_init_dev
 EXPORT_SYMBOL vmlinux 0x01661f5f	register_xen_selfballooning
+EXPORT_SYMBOL vmlinux 0x01734920	neigh_app_ns
 EXPORT_SYMBOL vmlinux 0x018dc0df	unlock_buffer
 EXPORT_SYMBOL vmlinux 0x01902adf	netpoll_trap
 EXPORT_SYMBOL vmlinux 0x01a9568d	kmap_to_page
@@ -11452,6 +11453,7 @@ EXPORT_SYMBOL_GPL sound/soc/mid-x86/snd-soc-sst-platform 0x49213850	sst_unregist
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x00e1e6eb	snd_soc_dapm_get_enum_double
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x02f5fe83	snd_soc_dapm_put_volsw
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x03cbcd0c	snd_soc_dapm_force_enable_pin
+EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x0412f96c	snd_soc_dapm_force_enable_pin_unlocked
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x04d47cf3	snd_soc_register_dai
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x062eeb66	snd_soc_codec_set_pll
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x09646dab	snd_soc_dapm_put_enum_double
@@ -11518,6 +11520,7 @@ EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x6c758b7c	snd_soc_default_volatile_reg
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x7049dd9a	snd_soc_default_readable_register
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x70c857d4	snd_soc_bytes_put
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x73a23d5a	snd_soc_dapm_info_pin_switch
+EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x75ffd742	snd_soc_dapm_disable_pin_unlocked
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x795872ec	snd_soc_info_volsw_ext
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x7b60fc3f	dpcm_be_dai_trigger
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x7d2c3417	snd_soc_update_bits_locked
@@ -11556,6 +11559,7 @@ EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xb6556fcf	snd_soc_dai_set_sysclk
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xb871ed72	snd_soc_resume
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xb87a68a2	snd_soc_info_enum_ext
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xb89adfaa	snd_soc_add_dai_controls
+EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xb99a2540	snd_soc_dapm_nc_pin_unlocked
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xb9f3b2cd	snd_soc_poweroff
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xba52c411	snd_soc_unregister_platform
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xba86b7f0	snd_soc_cache_sync
@@ -11569,6 +11573,7 @@ EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xca17b8d2	snd_soc_platform_trigger
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xcda76959	dapm_clock_event
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xcf9ae17c	snd_soc_register_codec
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xd063e978	snd_soc_dai_set_pll
+EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xd1b31c84	snd_soc_dapm_enable_pin_unlocked
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xd2188653	snd_soc_dapm_get_pin_switch
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xd50964ac	snd_soc_jack_notifier_unregister
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0xdc594081	snd_soc_get_strobe
