@@ -483,6 +483,14 @@ linux-lts-raring (3.8.0-40.58~precise1) precise; urgency=low
 
  -- Joseph Salisbury <joseph.salisbury@canonical.com>  Tue, 29 Apr 2014 14:37:37 -0400
 
+linux-lts-raring (3.8.0-39.58~precise1) precise; urgency=low
+
+  [ Peter Hurley ]
+
+  * n_tty: Fix n_tty_write crash when echoing in raw mode
+
+ -- Brad Figg <brad.figg@canonical.com>  Thu, 01 May 2014 11:07:07 -0700
+
 linux-lts-raring (3.8.0-39.57~precise1) precise; urgency=low
 
   [ Kamal Mostafa ]
