@@ -1,9 +1,39 @@
-linux-lts-quantal (3.5.0-50.74~precise1) precise; urgency=low
+linux-lts-quantal (3.5.0-51.75~precise1) precise; urgency=low
+
+  [ Kamal Mostafa ]
+
+  * Merged back Ubuntu-3.5.0-49.74 security release
+  * Revert "n_tty: Fix n_tty_write crash when echoing in raw mode"
+    - LP: #1314762
+  * Release Tracking Bug
+    - LP: #1317333
+
+  [ Upstream Kernel Changes ]
+
+  * ipv6: don't set DST_NOCOUNT for remotely added routes
+    - LP: #1293726
+    - CVE-2014-2309
+  * vhost: fix total length when packets are too short
+    - LP: #1312984
+    - CVE-2014-0077
+  * n_tty: Fix n_tty_write crash when echoing in raw mode
+    - LP: #1314762
+    - CVE-2014-0196
+  * floppy: ignore kernel-only members in FDRAWCMD ioctl input
+    - LP: #1316729
+    - CVE-2014-1737
+  * floppy: don't write kernel-only members to FDRAWCMD ioctl output
+    - LP: #1316735
+    - CVE-2014-1738
+
+ -- Joseph Salisbury <joseph.salisbury@canonical.com>  Thu, 08 May 2014 12:18:02 -0400
+
+linux (3.5.0-50.74) quantal; urgency=low
 
   [ Joseph Salisbury ]
 
   * Release Tracking Bug
-    - LP: #1314427
+    - LP: #1313852
 
   [ Upstream Kernel Changes ]
 
@@ -166,7 +196,15 @@ linux-lts-quantal (3.5.0-50.74~precise1) precise; urgency=low
   * net: ipv4: current group_info should be put after using.
     - CVE-2014-2851
 
- -- Joseph Salisbury <joseph.salisbury@canonical.com>  Wed, 30 Apr 2014 12:34:17 -0400
+ -- Joseph Salisbury <joseph.salisbury@canonical.com>  Mon, 28 Apr 2014 14:09:17 -0400
+
+linux (3.5.0-49.74) quantal; urgency=low
+
+  [ Peter Hurley ]
+
+  * n_tty: Fix n_tty_write crash when echoing in raw mode
+
+ -- Brad Figg <brad.figg@canonical.com>  Wed, 30 Apr 2014 13:37:57 -0700
 
 linux (3.5.0-49.73) quantal; urgency=low
 
