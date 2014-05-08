@@ -1,9 +1,38 @@
-linux-lts-saucy (3.11.0-21.35~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-22.36~precise1) precise; urgency=low
+
+  [ Kamal Mostafa ]
+
+  * Merged back Ubuntu-3.11.0-20.35 security release
+  * Revert "n_tty: Fix n_tty_write crash when echoing in raw mode"
+    - LP: #1314762
+  * Release Tracking Bug
+    - LP: #1317369
+
+  [ Tim Gardner ]
+
+  * [Config] d-i -- add virtio_scsi to virtio-modules
+    - LP: #1315462
+
+  [ Upstream Kernel Changes ]
+
+  * n_tty: Fix n_tty_write crash when echoing in raw mode
+    - LP: #1314762
+    - CVE-2014-0196
+  * floppy: ignore kernel-only members in FDRAWCMD ioctl input
+    - LP: #1316729
+    - CVE-2014-1737
+  * floppy: don't write kernel-only members to FDRAWCMD ioctl output
+    - LP: #1316735
+    - CVE-2014-1738
+
+ -- Joseph Salisbury <joseph.salisbury@canonical.com>  Thu, 08 May 2014 12:35:49 -0400
+
+linux (3.11.0-21.35) saucy; urgency=low
 
   [ Joseph Salisbury ]
 
   * Release Tracking Bug
-    - LP: #1314419
+    - LP: #1313831
 
   [ Upstream Kernel Changes ]
 
@@ -415,7 +444,15 @@ linux-lts-saucy (3.11.0-21.35~precise1) precise; urgency=low
   * SAUCE: Bluetooth: Give restart command more time to complete its job
     - LP: #1301908
 
- -- Joseph Salisbury <joseph.salisbury@canonical.com>  Wed, 30 Apr 2014 13:21:11 -0400
+ -- Joseph Salisbury <joseph.salisbury@canonical.com>  Mon, 28 Apr 2014 13:47:09 -0400
+
+linux (3.11.0-20.35) saucy; urgency=low
+
+  [ Peter Hurley ]
+
+  * n_tty: Fix n_tty_write crash when echoing in raw mode
+
+ -- Brad Figg <brad.figg@canonical.com>  Wed, 30 Apr 2014 14:44:34 -0700
 
 linux (3.11.0-20.34) saucy; urgency=low
 
