@@ -1,3 +1,7 @@
+linux-lts-raring (3.8.0-41.60~precise1) precise; urgency=low
+
+ -- Brad Figg <brad.figg@canonical.com>  Thu, 15 May 2014 16:09:52 -0700
+
 linux-lts-raring (3.8.0-41.59~precise1) precise; urgency=low
 
   [ Kamal Mostafa ]
