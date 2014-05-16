@@ -1,4 +1,17 @@
-linux-lts-quantal (3.5.0-51.75~precise1) precise; urgency=low
+linux-lts-quantal (3.5.0-51.76~precise1) precise; urgency=low
+
+  [ Brad Figg ]
+
+  * Revert "rtlwifi: Set the link state"
+
+  [ Kamal Mostafa ]
+
+  * Release Tracking Bug
+    - re-used previous tracking bug
+
+ -- Kamal Mostafa <kamal@canonical.com>  Fri, 16 May 2014 09:12:33 -0700
+
+linux (3.5.0-51.75) quantal; urgency=low
 
   [ Kamal Mostafa ]
 
@@ -26,7 +39,7 @@ linux-lts-quantal (3.5.0-51.75~precise1) precise; urgency=low
     - LP: #1316735
     - CVE-2014-1738
 
- -- Joseph Salisbury <joseph.salisbury@canonical.com>  Thu, 08 May 2014 12:18:02 -0400
+ -- Kamal Mostafa <kamal@canonical.com>  Wed, 07 May 2014 11:34:41 -0700
 
 linux (3.5.0-50.74) quantal; urgency=low
 
