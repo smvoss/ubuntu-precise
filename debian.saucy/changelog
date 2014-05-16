@@ -1,4 +1,17 @@
-linux-lts-saucy (3.11.0-22.36~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-22.38~precise1) precise; urgency=low
+
+  [ Brad Figg ]
+
+  * Revert "rtlwifi: Set the link state"
+
+  [ Kamal Mostafa ]
+
+  * Release Tracking Bug
+    - re-used previous tracking bug
+
+ -- Kamal Mostafa <kamal@canonical.com>  Fri, 16 May 2014 12:58:30 -0700
+
+linux (3.11.0-22.37) saucy; urgency=low
 
   [ Kamal Mostafa ]
 
@@ -25,7 +38,7 @@ linux-lts-saucy (3.11.0-22.36~precise1) precise; urgency=low
     - LP: #1316735
     - CVE-2014-1738
 
- -- Joseph Salisbury <joseph.salisbury@canonical.com>  Thu, 08 May 2014 12:35:49 -0400
+ -- Kamal Mostafa <kamal@canonical.com>  Mon, 12 May 2014 09:10:46 -0700
 
 linux (3.11.0-21.35) saucy; urgency=low
 
