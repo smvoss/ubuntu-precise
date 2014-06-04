@@ -1,9 +1,29 @@
-linux-lts-saucy (3.11.0-23.39~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-23.40~precise1) precise; urgency=low
+
+  [ Upstream Kernel Changes ]
+
+  * futex-prevent-requeue-pi-on-same-futex.patch futex: Forbid uaddr ==
+    uaddr2 in futex_requeue(..., requeue_pi=1)
+    - LP: #1326367
+    - CVE-2014-3153
+  * futex: Validate atomic acquisition in futex_lock_pi_atomic()
+    - LP: #1326367
+    - CVE-2014-3153
+  * futex: Always cleanup owner tid in unlock_pi
+    - LP: #1326367
+    - CVE-2014-3153
+  * futex: Make lookup_pi_state more robust
+    - LP: #1326367
+    - CVE-2014-3153
+
+ -- Brad Figg <brad.figg@canonical.com>  Wed, 04 Jun 2014 09:12:14 -0700
+
+linux (3.11.0-23.39) saucy; urgency=low
 
   [ Luis Henriques ]
 
   * Release Tracking Bug
-    - LP: #1321926
+    - LP: #1321190
 
   [ Upstream Kernel Changes ]
 
@@ -532,7 +552,7 @@ linux-lts-saucy (3.11.0-23.39~precise1) precise; urgency=low
   * Linux 3.11.10.10
     - LP: #1319933
 
- -- Luis Henriques <luis.henriques@canonical.com>  Thu, 22 May 2014 13:26:32 +0100
+ -- Luis Henriques <luis.henriques@canonical.com>  Tue, 20 May 2014 09:47:17 +0100
 
 linux (3.11.0-22.38) saucy; urgency=low
 
