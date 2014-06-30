@@ -1,3 +1,14 @@
+linux-lts-raring (3.8.0-43.64~precise1) precise; urgency=low
+
+  [ Kamal Mostafa ]
+
+  * Revert "ARM: OMAP3: clock: Back-propagate rate change from
+    cam_mclk to dpll4_m5 on all OMAP3 platforms"
+  * Release Tracking Bug
+    - re-used previous tracking bug
+
+ -- Kamal Mostafa <kamal@canonical.com>  Mon, 30 Jun 2014 11:59:24 -0700
+
 linux-lts-raring (3.8.0-43.63~precise1) precise; urgency=low
 
   [ Kamal Mostafa ]
