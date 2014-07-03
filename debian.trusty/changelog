@@ -1,4 +1,14 @@
-linux-lts-trusty (3.13.0-30.54~precise2) precise; urgency=low
+linux-lts-trusty (3.13.0-30.55~precise1) precise; urgency=low
+
+  [ Upstream Kernel Changes ]
+
+  * x86_64,ptrace: Enforce RIP <= TASK_SIZE_MAX (CVE-2014-4699)
+    - LP: #1337339
+    - CVE-2014-4699
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Thu, 03 Jul 2014 17:50:04 +0100
+
+linux (3.13.0-30.54) trusty; urgency=low
 
   [ Adam Conrad ]
 
@@ -37,7 +47,7 @@ linux-lts-trusty (3.13.0-30.54~precise2) precise; urgency=low
 
   * [Config] add debian/gbp.conf
   * Release Tracking Bug
-    - LP: #1328394
+    - LP: #1328286
 
   [ Mika Kuoppala ]
 
