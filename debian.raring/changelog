@@ -414,6 +414,16 @@ linux-lts-raring (3.8.0-43.63~precise1) precise; urgency=low
 
  -- Kamal Mostafa <kamal@canonical.com>  Mon, 30 Jun 2014 09:15:13 -0700
 
+linux-lts-raring (3.8.0-42.63~precise1) precise; urgency=low
+
+  [ Upstream Kernel Changes ]
+
+  * x86_64,ptrace: Enforce RIP <= TASK_SIZE_MAX (CVE-2014-4699)
+    - LP: #1337339
+    - CVE-2014-4699
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Fri, 04 Jul 2014 10:14:37 +0100
+
 linux-lts-raring (3.8.0-42.62~precise1) precise; urgency=low
 
   [ Upstream Kernel Changes ]
