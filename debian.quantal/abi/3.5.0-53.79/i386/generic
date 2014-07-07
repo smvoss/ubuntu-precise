@@ -12072,6 +12072,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x70a92c0e	i2c_adapter_type
 EXPORT_SYMBOL_GPL vmlinux 0x70ad8134	attribute_container_find_class_device
 EXPORT_SYMBOL_GPL vmlinux 0x70bb651d	__tracepoint_block_rq_remap
 EXPORT_SYMBOL_GPL vmlinux 0x70cf032f	usb_hcd_irq
+EXPORT_SYMBOL_GPL vmlinux 0x70d8e703	skb_copy_ubufs
 EXPORT_SYMBOL_GPL vmlinux 0x70dfe2c5	attribute_container_unregister
 EXPORT_SYMBOL_GPL vmlinux 0x7151dffa	power_supply_powers
 EXPORT_SYMBOL_GPL vmlinux 0x716265c7	debugfs_initialized

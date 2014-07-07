@@ -10889,6 +10889,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x0f43cca8	usb_bulk_msg
 EXPORT_SYMBOL_GPL vmlinux 0x0f71948c	sysfs_schedule_callback
 EXPORT_SYMBOL_GPL vmlinux 0x0f751aea	input_event_from_user
 EXPORT_SYMBOL_GPL vmlinux 0x0f949c09	adp5520_write
+EXPORT_SYMBOL_GPL vmlinux 0x0f977fa1	skb_copy_ubufs
 EXPORT_SYMBOL_GPL vmlinux 0x0fa138de	xen_hvm_need_lapic
 EXPORT_SYMBOL_GPL vmlinux 0x0fc02dc8	inet6_csk_search_req
 EXPORT_SYMBOL_GPL vmlinux 0x0fcc1969	copy_from_user_nmi
