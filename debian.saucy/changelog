@@ -1,9 +1,27 @@
-linux-lts-saucy (3.11.0-25.43~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-26.44~precise1) precise; urgency=low
+
+  [ Luis Henriques ]
+
+  * Merged back Ubuntu-3.11.0-24.42 security release
+  * Revert "x86_64,ptrace: Enforce RIP <= TASK_SIZE_MAX (CVE-2014-4699)"
+    - LP: #1337339
+  * Release Tracking Bug
+    - LP: #1338766
+
+  [ Upstream Kernel Changes ]
+
+  * ptrace,x86: force IRET path after a ptrace_stop()
+    - LP: #1337339
+    - CVE-2014-4699
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Tue, 08 Jul 2014 13:45:06 +0100
+
+linux (3.11.0-25.43) saucy; urgency=low
 
   [ Luis Henriques ]
 
   * Release Tracking Bug
-    - LP: #1336805
+    - LP: #1336203
 
   [ Upstream Kernel Changes ]
 
@@ -204,7 +222,17 @@ linux-lts-saucy (3.11.0-25.43~precise1) precise; urgency=low
     - LP: #1335314
     - CVE-2014-4611
 
- -- Luis Henriques <luis.henriques@canonical.com>  Wed, 02 Jul 2014 15:51:49 +0100
+ -- Luis Henriques <luis.henriques@canonical.com>  Tue, 01 Jul 2014 17:00:20 +0100
+
+linux (3.11.0-24.42) saucy; urgency=low
+
+  [ Upstream Kernel Changes ]
+
+  * x86_64,ptrace: Enforce RIP <= TASK_SIZE_MAX (CVE-2014-4699)
+    - LP: #1337339
+    - CVE-2014-4699
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Fri, 04 Jul 2014 09:20:33 +0100
 
 linux (3.11.0-24.41) saucy; urgency=low
 
