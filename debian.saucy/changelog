@@ -1,4 +1,14 @@
-linux-lts-saucy (3.11.0-26.44~precise1) precise; urgency=low
+linux-lts-saucy (3.11.0-26.45~precise1) precise; urgency=low
+
+  [ Upstream Kernel Changes ]
+
+  * l2tp: Privilege escalation in ppp over l2tp sockets
+    - LP: #1341472
+    - CVE-2014-4943
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Mon, 14 Jul 2014 14:23:48 +0100
+
+linux (3.11.0-26.44) saucy; urgency=low
 
   [ Luis Henriques ]
 
@@ -6,7 +16,7 @@ linux-lts-saucy (3.11.0-26.44~precise1) precise; urgency=low
   * Revert "x86_64,ptrace: Enforce RIP <= TASK_SIZE_MAX (CVE-2014-4699)"
     - LP: #1337339
   * Release Tracking Bug
-    - LP: #1338766
+    - LP: #1338556
 
   [ Upstream Kernel Changes ]
 
@@ -14,7 +24,7 @@ linux-lts-saucy (3.11.0-26.44~precise1) precise; urgency=low
     - LP: #1337339
     - CVE-2014-4699
 
- -- Luis Henriques <luis.henriques@canonical.com>  Tue, 08 Jul 2014 13:45:06 +0100
+ -- Luis Henriques <luis.henriques@canonical.com>  Mon, 07 Jul 2014 13:21:48 +0100
 
 linux (3.11.0-25.43) saucy; urgency=low
 
