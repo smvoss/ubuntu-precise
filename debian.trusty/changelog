@@ -1,13 +1,23 @@
-linux-lts-trusty (3.13.0-46.77~precise1) precise; urgency=low
+linux-lts-trusty (3.13.0-46.79~precise1) precise; urgency=low
+
+  [ Upstream Kernel Changes ]
+
+  * IB/core: Prevent integer overflow in ib_umem_get address arithmetic
+    - LP: #1413741
+    - CVE-2015-8159
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Tue, 10 Mar 2015 19:21:10 +0000
+
+linux (3.13.0-46.77) trusty; urgency=low
 
   [ Seth Forshee ]
 
   * Revert "ipv6: fix swapped ipv4/ipv6 mtu_reduced callbacks"
     - LP: #1404558
   * Release Tracking Bug
-    - LP: #1427297
+    - LP: #1427292
 
- -- Seth Forshee <seth.forshee@canonical.com>  Mon, 02 Mar 2015 16:47:44 -0600
+ -- Seth Forshee <seth.forshee@canonical.com>  Mon, 02 Mar 2015 11:33:20 -0600
 
 linux (3.13.0-46.76) trusty; urgency=low
 
