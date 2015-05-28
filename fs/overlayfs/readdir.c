@@ -14,6 +14,7 @@
 #include <linux/xattr.h>
 #include <linux/rbtree.h>
 #include <linux/security.h>
+#include <linux/sched.h>
 #include "overlayfs.h"
 
 struct ovl_cache_entry {
@@ -302,6 +303,11 @@ static int ovl_readdir(struct file *file, void *buf, filldir_t filler)
 		ovl_dir_reset(file);
 
 	if (od->is_real) {
+		res = ovl_dentry_root_may(file->f_path.dentry,
+					  &(od->realfile->f_path), MAY_READ);
+		if (res)
+			return res;
+
 		res = vfs_readdir(od->realfile, filler, buf);
 		file->f_pos = od->realfile->f_pos;
 
@@ -315,6 +321,13 @@ static int ovl_readdir(struct file *file, void *buf, filldir_t filler)
 
 		ovl_path_lower(file->f_path.dentry, &lowerpath);
 		ovl_path_upper(file->f_path.dentry, &upperpath);
+
+		res = ovl_dentry_root_may(file->f_path.dentry, &upperpath, MAY_READ);
+		if (res)
+			return res;
+		res = ovl_dentry_root_may(file->f_path.dentry, &lowerpath, MAY_READ);
+		if (res)
+			return res;
 
 		res = ovl_dir_read_merged(&upperpath, &lowerpath, &rdd);
 		if (res) {
@@ -465,6 +478,13 @@ static int ovl_check_empty_dir(struct dentry *dentry, struct list_head *list)
 
 	ovl_path_upper(dentry, &upperpath);
 	ovl_path_lower(dentry, &lowerpath);
+
+	err = ovl_dentry_root_may(dentry, &upperpath, MAY_READ);
+	if (err)
+		return err;
+	err = ovl_dentry_root_may(dentry, &lowerpath, MAY_READ);
+	if (err)
+		return err;
 
 	err = ovl_dir_read_merged(&upperpath, &lowerpath, &rdd);
 	if (err)
