@@ -322,13 +322,16 @@ static int ovl_readdir(struct file *file, void *buf, filldir_t filler)
 		ovl_path_lower(file->f_path.dentry, &lowerpath);
 		ovl_path_upper(file->f_path.dentry, &upperpath);
 
-		res = ovl_dentry_root_may(file->f_path.dentry, &upperpath, MAY_READ);
-		if (res)
-			return res;
-		res = ovl_dentry_root_may(file->f_path.dentry, &lowerpath, MAY_READ);
-		if (res)
-			return res;
-
+		if (upperpath.dentry) {
+			res = ovl_dentry_root_may(file->f_path.dentry, &upperpath, MAY_READ);
+			if (res)
+				return res;
+		}
+		if (lowerpath.dentry) {
+			res = ovl_dentry_root_may(file->f_path.dentry, &lowerpath, MAY_READ);
+			if (res)
+				return res;
+		}
 		res = ovl_dir_read_merged(&upperpath, &lowerpath, &rdd);
 		if (res) {
 			ovl_cache_free(rdd.list);
@@ -479,13 +482,16 @@ static int ovl_check_empty_dir(struct dentry *dentry, struct list_head *list)
 	ovl_path_upper(dentry, &upperpath);
 	ovl_path_lower(dentry, &lowerpath);
 
-	err = ovl_dentry_root_may(dentry, &upperpath, MAY_READ);
-	if (err)
-		return err;
-	err = ovl_dentry_root_may(dentry, &lowerpath, MAY_READ);
-	if (err)
-		return err;
-
+	if (upperpath.dentry) {
+		err = ovl_dentry_root_may(dentry, &upperpath, MAY_READ);
+		if (err)
+			return err;
+	}
+	if (lowerpath.dentry) {
+		err = ovl_dentry_root_may(dentry, &lowerpath, MAY_READ);
+		if (err)
+			return err;
+	}
 	err = ovl_dir_read_merged(&upperpath, &lowerpath, &rdd);
 	if (err)
 		return err;
