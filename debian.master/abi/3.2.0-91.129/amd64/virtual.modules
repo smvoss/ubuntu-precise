@@ -41,7 +41,6 @@ acer-wmi
 acpi_ipmi
 acpi_memhotplug
 acpi_pad
-acpiphp
 acpiphp_ibm
 acpi_power_meter
 acquirewdt
