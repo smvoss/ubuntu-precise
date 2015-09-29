@@ -2156,7 +2156,7 @@ EXPORT_SYMBOL vmlinux 0x00000000	__blk_run_queue
 EXPORT_SYMBOL vmlinux 0x00000000	__block_page_mkwrite
 EXPORT_SYMBOL vmlinux 0x00000000	__block_write_begin
 EXPORT_SYMBOL vmlinux 0x00000000	__blockdev_direct_IO
-EXPORT_SYMBOL vmlinux 0x00000000	__bread
+EXPORT_SYMBOL vmlinux 0x00000000	__bread_gfp
 EXPORT_SYMBOL vmlinux 0x00000000	__breadahead
 EXPORT_SYMBOL vmlinux 0x00000000	__break_lease
 EXPORT_SYMBOL vmlinux 0x00000000	__brelse
@@ -2203,7 +2203,8 @@ EXPORT_SYMBOL vmlinux 0x00000000	__get_user_1
 EXPORT_SYMBOL vmlinux 0x00000000	__get_user_2
 EXPORT_SYMBOL vmlinux 0x00000000	__get_user_4
 EXPORT_SYMBOL vmlinux 0x00000000	__get_user_pages
-EXPORT_SYMBOL vmlinux 0x00000000	__getblk
+EXPORT_SYMBOL vmlinux 0x00000000	__getblk_gfp
+EXPORT_SYMBOL vmlinux 0x00000000	__getblk_slow
 EXPORT_SYMBOL vmlinux 0x00000000	__hw_addr_add_multiple
 EXPORT_SYMBOL vmlinux 0x00000000	__hw_addr_del_multiple
 EXPORT_SYMBOL vmlinux 0x00000000	__hw_addr_flush
@@ -8268,6 +8269,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	of_irq_map_raw
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	of_irq_to_resource
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	of_modalias_node
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	of_property_count_strings
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	of_property_match_string
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	of_property_read_string
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	of_property_read_string_index
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	of_property_read_u32_array
@@ -8551,6 +8553,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	sata_link_debounce
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	sata_link_hardreset
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	sata_link_resume
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	sata_link_scr_lpm
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	sata_lpm_ignore_phy_events
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	sata_pmp_error_handler
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	sata_pmp_port_ops
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	sata_pmp_qc_defer_cmd_switch
